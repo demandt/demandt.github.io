@@ -1,507 +1,1067 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Have We Built a Mind?</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Have we built a mind?</title>
+
+  <meta name="description"
+    content="A question worth holding open. A long-form essay exploring AI consciousness, neuroscience, language, memory, and philosophy of mind." />
+
+  <link rel="canonical" href="https://demandt.github.io/have-we-built-a-mind/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Have we built a mind?" />
+  <meta property="og:description" content="A question worth holding open." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://demandt.github.io/have-we-built-a-mind/" />
+  <meta property="og:image" content="https://demandt.github.io/have-we-built-a-mind/assets/social-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Have we built a mind?" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Have we built a mind?" />
+  <meta name="twitter:description" content="A question worth holding open." />
+  <meta name="twitter:image" content="https://demandt.github.io/have-we-built-a-mind/assets/social-preview.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+
 </head>
+
 <body>
 
-<div class="topbar">
-  <span class="brand">Have we built a mind? <span class="brand-by">an essay by Kristoffer Demandt Hansen</span></span>
-  <nav class="tabs" aria-label="Views">
-    <span class="tab-ind" id="tabInd" aria-hidden="true"></span>
-    <button class="tab active" data-tab="cover">Cover</button>
-    <button class="tab" data-tab="article">Essay</button>
-    <button class="tab" data-tab="map">Argument map</button>
-    <button class="tab" data-tab="time">Timeline</button>
-  </nav>
-  <span class="topbar-spacer" aria-hidden="true"></span>
-</div>
+  <div class="topbar">
+    <span class="brand">Have we built a mind? <span class="brand-by">an essay by Kristoffer Demandt Hansen</span></span>
+    <nav class="tabs" aria-label="Views">
+      <span class="tab-ind" id="tabInd" aria-hidden="true"></span>
+      <button class="tab active" data-tab="cover">Cover</button>
+      <button class="tab" data-tab="article">Essay</button>
+      <button class="tab" data-tab="map">Argument map</button>
+      <button class="tab" data-tab="time">Timeline</button>
+    </nav>
+    <span class="topbar-spacer" aria-hidden="true"></span>
+  </div>
 
-<section class="cover" id="view-cover">
-  <div class="cover-hero reveal">
-    <p class="cover-kicker">An essay</p>
-    <h1 class="cover-title">Have we built a mind?</h1>
-    <p class="cover-sub">A question worth holding open</p>
-    <p class="cover-by">Kristoffer Demandt Hansen &middot; June 2026</p>
-    <div class="cover-actions">
-      <button class="cover-go" data-tab="map">Argument map</button>
-      <button class="cover-go primary" data-tab="article">Read the essay</button>
-      <button class="cover-go" data-tab="time">Timeline</button>
+  <section class="cover" id="view-cover">
+    <div class="cover-hero reveal">
+      <p class="cover-kicker">An essay</p>
+      <h1 class="cover-title">Have we built a mind?</h1>
+      <p class="cover-sub">A question worth holding open</p>
+      <p class="cover-by">Kristoffer Demandt Hansen &middot; June 2026</p>
+      <div class="cover-actions">
+        <button class="cover-go" data-tab="map">Argument map</button>
+        <button class="cover-go primary" data-tab="article">Read the essay</button>
+        <button class="cover-go" data-tab="time">Timeline</button>
+      </div>
     </div>
+
+    <div class="cover-abstract reveal">
+      <p>This essay began with a small curiosity and grew into something larger: an attempt to take one of the most
+        confident claims about AI, namely that these systems plainly do not think, understand, or experience, and test
+        it against the literature it leans on. It follows Geoffrey Hinton's question on this matter carefully, and
+        traces it through machine learning, neuroscience, psychology, and philosophy of mind. I ask not whether AI is
+        conscious, but whether anyone is in a position to be certain it is not.</p>
+      <p>It is also an experiment in reading. The argument draws on a plethora of sources spanning nine decades, so the
+        page is built to make that scaffolding visible: a typeset essay, an interactive <a class="tab-link"
+          href="#map">argument map</a>, and a <a class="tab-link" href="#timeline">timeline</a> are three views of the
+        same material. As you read, each cited work fades into the margin beside the passage it supports, and sections
+        rise gently into view. These small touches are meant to keep the sources present without crowding the content.
+      </p>
+    </div>
+
+    <div class="cover-strands reveal" id="coverStrands"></div>
+    <p class="cover-stat reveal">39 sources spanning from 1932–2026 illustrate four strands of the argument</p>
+
+    <div class="note reveal">
+      <h3>Author's note</h3>
+      <p class="sub">How this came to be.</p>
+      <p>I am not a philosopher, nor do I study consciousness professionally. My background is technical; my master's
+        work was on neural networks, the same family of techniques this essay spends much of its first half discussing.
+        But the question that drew me in was not a technical one.</p>
+      <p>In June 2025, Geoffrey Hinton sat down with Steven Bartlett on <em>The Diary of a CEO</em>, and I found myself
+        unable to stop thinking about the conversation. It was not the engineering that held my attention, but the
+        consciousness question: the analogies, thought experiments, and philosophical problems Hinton used to explore
+        it. That led me to further interviews, papers and books.</p>
+      <p>What began as curiosity and unstructured note-taking gradually became a more serious attempt to trace the
+        argument back to its sources. Over time, what unfolded started to take shape in the form of an essay.</p>
+      <p>The result is this: an attempt to follow Hinton's reasoning carefully, trace it back to the literature, and see
+        whether it holds up.</p>
+      <p>I want to be clear about what this is not. I am not arguing that AI <em>is</em> or is <em>not</em> conscious. I
+        do not know, and I am wary of anyone certain that they do. What does interest me is the confidence with which
+        the question is often treated as settled.</p>
+      <p>I have made a deliberate effort to survey the field for relevant sources, particularly in philosophy and
+        neuroscience, where my own knowledge is limited. To the best of my abilities, I have tried to follow the
+        argument wherever it led, paying particular attention to objections and opposing views. The argument, the
+        writing, and any errors, are my own.</p>
+    </div>
+  </section>
+
+  <div class="wrap article" id="view-article" hidden>
+
+    <div class="marginnote" id="marginNote" aria-hidden="true"></div>
+
+    <h1>Have we built a mind?</h1>
+    <p class="sub">A question worth holding open</p>
+    <p class="byline">Kristoffer Demandt Hansen<br />June 2026</p>
+
+    <h2>Abstract</h2>
+
+    <p>Large language models are often dismissed as stochastic parrots: systems that manipulate symbols without
+      understanding, consciousness, or inner experience. Geoffrey Hinton has challenged that confidence with a simple
+      question: if we cannot clearly define consciousness, explain where it comes from, or reliably detect it from the
+      outside, how can we be so certain that these systems lack it? This essay follows that question through machine
+      learning, neuroscience, psychology, and philosophy of mind. It examines a series of objections commonly raised
+      against AI consciousness, from next-token prediction and backpropagation to memory, the Chinese Room, and
+      embodiment. The aim is not to argue that today's AI systems are conscious. It is to examine whether the evidence
+      justifies treating the matter as settled. The conclusion is cautious. Some objections weaken under closer
+      inspection, others do not. What remains is not a verdict but a hint that the evidence seems insufficient to
+      justify certainty in either direction.</p>
+
+    <hr />
+
+    <p>There is a recognisable pattern that surfaces whenever AI and consciousness come up. The details vary, but the
+      conclusion is usually the same: LLMs are not conscious, do not think, do not understand, and suggestions otherwise
+      are dismissed as anthropomorphism. What stands out is not merely the conclusion but the confidence with which it
+      is often delivered, and how quickly that confidence seems to become shared. This pattern matters because AI is a
+      technology with enormous societal weight, and almost everyone seems to have formed an opinion about it. Yet to
+      declare, flatly, that there is no inner life present — that these systems do not think and do not understand — is
+      a surprisingly strong claim.</p>
+
+    <p>The worry behind the dismissal is genuine, and I take it seriously. Treating these systems as though they possess
+      feelings and intentions they may not actually have can mislead. There is good reason to think that such
+      perceptions shape how users relate to these systems and can even influence discussions about the legal protections
+      those users are owed (<a class="src" href="#deshpande">Deshpande et al., 2023</a>).</p>
+
+    <p>But whether these systems are conscious is a scientific question. And scientific questions are not settled by
+      consensus. They are settled by evidence.</p>
+
+    <p>Geoffrey Hinton has spent half a century studying exactly this mechanism. His work helped build the field and
+      earned him both a Turing Award and a Nobel Prize. Yet those honours are not the reason to pay attention; no
+      credential settles a question like this. What interests me is the question Hinton keeps returning to. He does not
+      argue that these systems are conscious. He asks why so many people are certain they are not. If we cannot clearly
+      define consciousness, explain where it comes from, or reliably detect it outside ourselves, where does that
+      certainty come from?</p>
+
+    <p>That question serves as the organising principle of this essay. Hinton's reasoning is treated not as a verdict to
+      trust but as a case to examine. We begin with the mechanism, move to the consciousness question itself, then to
+      memory, and finally to the horizon these systems may be pushing us toward. The most common starting point is the
+      mechanism itself: how these systems are trained, and what the training objective actually is. The assumption that
+      often follows is that the mechanism settles everything else.</p>
+
+    <h2>The parrot objection</h2>
+
+    <p>The objection is, at its core, a claim about mechanism. LLMs are probabilistic systems trained on text to predict
+      the next token. That much is true. The stronger claim is that this fact tells us everything important about them.
+      In its most influential formulation they are <em>stochastic parrots</em>, a term introduced by <a class="src"
+        href="#parrots">Bender, Gebru, McMillan-Major, and Shmitchell in 2021</a>: systems that stitch linguistic forms
+      together by probability alone, without reference to meaning. This is not a caricature of the objection. As a
+      description of the training objective, it is largely accurate. The Transformer architecture underlying modern LLMs
+      was introduced by <a class="src" href="#vaswani">Vaswani et al. in <em>Attention Is All You Need</em> (2017)</a>.
+      The GPT series of papers, culminating in <a class="src" href="#brown">Brown et al.'s <em>Language Models are
+          Few-Shot Learners</em> (2020)</a>, adopted the same objective of next-token prediction. That part is not in
+      dispute. But is a technical description an explanation? Does knowing the objective a system was trained on tell us
+      what the trained system actually does? It does not, any more than saying the brain just fires electrochemical
+      signals tells us what the brain does.</p>
+
+    <p>In <em>Emergent Abilities of Large Language Models</em> (2022), <a class="src" href="#wei">Wei et al.</a>
+      documented capabilities that appeared at larger model scales despite being absent, or nearly absent, at smaller
+      ones. Some abilities seemed to emerge without being explicitly trained for and without a clear account of why.
+      What exactly is happening remains debated. In <em>Are Emergent Abilities of Large Language Models a Mirage?</em>
+      (2023), <a class="src" href="#schaeffer">Schaeffer et al.</a> argue that part of the effect may be a consequence
+      of how we measure performance rather than a sudden change in the model itself. The distinction is easier to see
+      with a simple example. Imagine testing whether a child can ride a bicycle using a pass/fail metric. For months the
+      answer is "fail: the child fell." Then one day it becomes "pass: the child stayed upright." The single verdict
+      hides all the gradual progress underneath it: steering, balance, pedal coordination, each improving by degrees.
+      The apparent phase transition is partly in how we measured. The core observation still stands, however. Whether
+      the transition is genuinely abrupt or merely appears so under certain measurements, the gap between the training
+      objective and what emerges from it is both empirically established and theoretically unresolved.</p>
+
+    <p>Yet the representations these systems learn appear to be richer than the parrot metaphor would suggest. The word
+      cat comes to encode a bundle of features: animate, furry, has whiskers, has claws, domestic, roughly the size of a
+      breadbox. Thousands of such features, in fact. What emerges is a geometry of meaning. <a class="src"
+        href="#bengio">Bengio et al. first demonstrated the idea formally in <em>A Neural Probabilistic Language
+          Model</em> (2003)</a>, and <a class="src" href="#mikolov">Mikolov et al. later made it famous through word2vec
+        (2013)</a>. Their key observation was simple: relationships between words become relationships in space, and
+      arithmetic performed on those representations produces semantically meaningful results. King − man + woman =
+      queen. Subtracting France from Paris and adding Italy yields Rome (Mikolov et al., 2013). Not by lookup. Not by
+      rule. The relationships are present because the training process discovered them. Nobody told the model that Paris
+      is the capital of France, or that kings and queens differ by gender. Those structures fell out of the data. The
+      system learned them for itself.</p>
+
+    <p>Hinton illustrates the point with a simple thought experiment (<a class="src" href="#raza">Raza, 2024a</a>).
+      Imagine being asked to choose between two claims, both of them plainly false: all dogs are female and all cats are
+      male, or all dogs are male and all cats are female. Which sounds more plausible?</p>
+
+    <p>You almost certainly have an answer. And you almost certainly have no idea where it came from. That is the point.
+      There is no logical basis for gendering either animal. The features we associate with cat sit closer to those for
+      woman, and the features for dog closer to those for man, and the answer seems to emerge from that proximity rather
+      than from any conscious reasoning. Perhaps this is part of what intuition feels like. The answer arrives first.
+      The explanation comes later.</p>
+
+    <p>This intuition can be made precise through <em>word embeddings</em>, which represent words as points in a
+      mathematical space where semantic relationships become geometric ones. It is tempting to think that humans and
+      language models may, at least in some cases, be relying on something similar, though whether the brain actually
+      represents meaning in this way remains unsettled. The principle behind this has a name: the Distributional
+      Hypothesis, first formalised by <a class="src" href="#harris">Harris in <em>Distributional Structure</em>
+        (1954)</a> and crystallised by <a class="src" href="#firth">Firth's observation in 1957</a> that "you shall know
+      a word by the company it keeps." The idea is simple: meaning can be inferred from patterns of use. Harris and
+      Firth proposed it as a theory of language, and word embeddings eventually transformed that linguistic intuition
+      into a working technology. By training on vast quantities of text, language models learn relational structure
+      directly from usage alone. In that sense, modern language models are less a departure from the distributional view
+      than its most ambitious demonstration.</p>
+
+    <p>But that the distributional structure is real does not settle what it amounts to. This is where I think the
+      strongest skeptical argument appears. In <a class="src" href="#benderkoller"><em>Climbing towards NLU</em> (2020),
+        Bender and Koller</a> argue that a system trained only on the statistical relationships between words has, in
+      principle, no route to meaning itself. They illustrate the point with a hyper-intelligent octopus that has tapped
+      an undersea telegraph cable and learned to eavesdrop on two people chatting between islands. The octopus never
+      sees the islands. It has never encountered a coconut, a rope, or a bear. Yet it becomes so fluent in the patterns
+      of the conversation that it can predict what comes next and even step into the exchange itself. Then the test
+      arrives. One of the speakers, stranded on a beach and under attack, asks how to build a weapon from the materials
+      around him. The octopus knows the words. It knows the patterns. What it lacks is the world those words refer to.
+      Distributional structure, on this view, captures the shadow of meaning rather than meaning itself. It learns
+      correlations, not reference. The problem remains unresolved, and it runs in parallel with everything that follows.
+    </p>
+
+    <p>Even granting the octopus, what these systems learn is already more than the crude parrot picture would suggest.
+      Consider the word <em>may</em>. It can refer to the month between April and June, or it can mean permission, as in
+      "you may go." Where a parrot repeats the word, an LLM uses context to distinguish between the alternatives.</p>
+
+    <p>The difference comes from context. Rather than store words as fixed symbols, the models constructs their
+      representations from the words around them. This is the work of the attention mechanism at the heart of the
+      Transformer architecture introduced earlier. In one context, may sits among months. In another, it sits among
+      permissions. Meaning is represented through relationships. The path to those relationships could rely on the same
+      broad learning principle found in biology. <a class="src" href="#hebb">Hebb's rule, proposed in <em>The
+          Organization of Behavior</em> (1949)</a>, holds that connections strengthen through repeated co-activation.
+      Backpropagation, described by <a class="src" href="#rhw">Rumelhart, Hinton, and Williams (1986)</a>, performs a
+      similar function in neural networks by gradually adjusting connection weights in response to error. The details
+      differ. The underlying idea is the same: experience changes the system, and those changes accumulate into
+      structure. Whether that structure amounts to understanding, or merely to a more sophisticated form of statistical
+      mimicry, is exactly the question. That it is <em>more</em> than mere parroting is not.</p>
+
+    <p>Whether brains and language models learn through the same mechanism remains unclear. Backpropagation adjusts a
+      network by computing an error signal and propagating it backwards through the layers to determine how each weight
+      should change. The brain almost certainly does not do this, at least not literally. Backpropagation appears to
+      require information that biological neurons have no known way of accessing. For the error to travel backwards
+      through the network, each neuron would need a return pathway whose connection strengths mirror those of the
+      forward pathway. Yet a biological neuron cannot simply inspect the strengths of the inputs feeding into it, let
+      alone copy them (<a class="src" href="#lillicrap">Lillicrap et al., 2020</a>). <a class="src"
+        href="#crick">Francis Crick pointed this out as early as 1989 in <em>The Recent Excitement About Neural
+          Networks</em></a>. The objection came to be known as the weight transport problem. Decades later, it remains
+      one of the central reasons to doubt that the brain runs anything like literal backpropagation.</p>
+
+    <p>But <a class="src" href="#lillicrap">Lillicrap et al.'s <em>Backpropagation and the Brain</em></a> argue that the
+      brain may be approximating something functionally similar to backpropagation. Under older models of the cortical
+      neuron, that possibility looked remote. The neuron was treated as a simple electrical summing device, with
+      feedforward and feedback signals pooled together into the same voltage. The obvious question was how a neuron
+      could tell the difference between an incoming signal and an instructional one. Newer models make the problem look
+      less formidable. Cortical pyramidal neurons appear to possess electrically distinct dendritic compartments, with
+      feedforward and feedback inputs arriving on different parts of the cell (Lillicrap et al., 2020). Learning may be
+      the common idea, even if the implementation appears very different. Taken together, these developments make
+      backpropagation look less outlandish than it did in Crick's day.</p>
+
+    <p>Hinton himself remains unconvinced that the brain uses backpropagation. Despite co-authoring the review, he
+      continues to pursue alternatives, including the <a class="src" href="#ff"><em>Forward-Forward Algorithm</em>
+        described in his 2022 paper</a> (Hinton, 2022). He has stated plainly that the central question, how the brain
+      decides whether a given connection should strengthen or weaken, remains unresolved, and that he does not yet know
+      the answer (<a class="src" href="#raza">Raza, 2024b</a>). That disagreement is the interesting part. Two authors
+      can read the same evidence and come away with different conclusions because the central question remains
+      unresolved. The structural principle may be shared, but whether the brain implements anything resembling
+      backpropagation is still unknown. That so much remains unresolved should give us pause. After half a century of
+      work by the people who built the field, we still do not know exactly how the brain learns. Confidence about what
+      these systems can or cannot be should be proportionate to that uncertainty.</p>
+
+    <p>The questions are not new. Writing in <em>Computing Machinery and Intelligence</em> (1950), <a class="src"
+        href="#turing">Alan Turing</a> anticipated many of the objections still raised against machine intelligence and
+      answered them one by one. One objection was that a machine could not truly think unless it could feel. A machine
+      that wrote a sonnet would not count, the argument went, because it would merely be assembling words mechanically
+      rather than expressing genuine emotion. Turing's response was simple. Applied consistently, the same standard
+      would prevent us from concluding that any other human being thinks or feels either. The only way to know for sure
+      would be to be that person.</p>
+
+    <p>Modern neuroscience has not closed the gap. We can now measure neural activity in extraordinary detail, and while
+      a brain scan shows that processing is occurring, it does not show what that processing feels like from the inside,
+      or whether it feels like anything at all (<a class="src" href="#chalmers">Chalmers, 1995</a>). The measurement
+      reveals the brain activity associated with the experience, but the experience itself remains inferred. In that
+      respect, Turing's question has not become easier to answer. Seventy-five years later, we still observe minds from
+      the outside. <em>Can machines think?</em> remains difficult for precisely the same reason that <em>Do other people
+        think?</em> remains difficult: the thing we are trying to explain is not directly observable. This question has
+      not become easier as the technology has progressed — it has, however, become considerably more pressing.</p>
+
+    <p>Hinton is hardly alone in arriving at uncertainty here. Philosophers who disagree sharply on almost everything
+      else, from Nagel to Chalmers to Dennett, have all wrestled with the same problem: how a third-person description
+      of a system could ever fully account for first-person experience. Their conclusions differ dramatically. The
+      underlying difficulty does not.</p>
+
+    <h2>The consciousness confidence problem</h2>
+
+    <p>The mechanism only takes us so far. What these systems do is, in principle, a technical question. Difficult,
+      perhaps, but tractable. The harder question is whether any of that processing is accompanied by experience. It is
+      here that the confident dismissal begins to run into trouble. The argument that LLMs are definitively not
+      conscious ultimately depends on a definition of consciousness that does not survive close examination.</p>
+
+    <p>A few distinctions help clarify the issue. A system may manipulate structured representations without being
+      conscious. Consciousness is not obviously the same thing as intelligence, understanding, or agency. These concepts
+      overlap, but they are not identical.</p>
+
+    <p>So the question pursued here is narrower than all of them. Is there something it is like to be such a system?</p>
+
+    <p>The terms typically invoked are consciousness, sentience, and subjective experience. These are not the same
+      thing, but they are all attempts to describe the phenomenon <a class="src" href="#nagel">Thomas Nagel was
+        concerned with in <em>What Is It Like to Be a Bat?</em> (1974)</a>. His argument was that consciousness has an
+      irreducibly subjective character. We can map a bat's brain, observe its behaviour, and understand the mechanics of
+      echolocation in extraordinary detail. Yet none of that tells us what it is like to be the bat itself. That is
+      Nagel's challenge. If a complete description of a bat cannot tell us what it is like to be a bat, how could a
+      description of any system tell us what it is like to be that system? There seems to be a gap between describing a
+      system and inhabiting its experience. However complete the description becomes, the subjective point of view
+      remains beyond reach. We do not observe experience directly. We infer it.</p>
+
+    <p>This is the classical problem of other minds. The only consciousness you know directly is your own. Every
+      attribution of consciousness to another being is, in the end, an inference. We infer minds in other humans because
+      their behaviour resembles what we ourselves do when experiencing the world. We extend the same reasoning to
+      animals, though with increasing uncertainty as their behaviour diverges from our own. Philosophers have debated
+      the legitimacy of that inference for centuries, but the underlying predicament remains the same: consciousness is
+      never observed directly. It is inferred from what a system says and does.</p>
+
+    <p>Of course, behaviour is not the only evidence involved. When we attribute consciousness to other humans and
+      animals, we also rely on shared biology, common evolutionary history, and similarities in neural organisation. The
+      challenge is not that AIs present identical evidence. They clearly do not. The challenge is that none of these
+      sources of evidence gives us direct access to subjective experience itself. They remain indirect indicators,
+      albeit powerful ones. That leaves a deeper question: If consciousness is always inferred rather than observed,
+      what makes one inference acceptable and another impossible? Why does uncertainty feel reasonable in some cases and
+      absurd in others? Is the distinction grounded in principle, or are our intuitions doing more of the work than we
+      realise?</p>
+
+    <p><a class="src" href="#chalmers">David Chalmers, in <em>Facing Up to the Problem of Consciousness</em> (1995)</a>,
+      drew a distinction that is essential here. The "easy problems" of consciousness concern cognitive functions:
+      attention, memory, information integration, and the ability to report on mental states. They are called easy not
+      because they are simple but because they are, in principle, tractable. The hard problem is what remains after all
+      of that is explained. Suppose we eventually account for every mechanism involved in perception, memory, learning,
+      and decision-making. Suppose nothing is left unexplained at the level of function. A further question still seems
+      to remain: Why is any of it accompanied by experience? Why does information processing feel like something from
+      the inside, rather than simply occurring?</p>
+
+    <p>Look closely at the definitions offered in confident dismissals of AI consciousness, and almost all of them turn
+      out to be answers to the easy problems. A sense of awareness, the perception of oneself as a coherent agent,
+      coherent thoughts and memories: these are descriptions of cognitive function. They explain what a system does. But
+      the hard problem begins right where those explanations end. A complete account of awareness, memory, attention,
+      and self-report still leaves the same question standing: why should any of it feel like anything from the inside?
+      The dismissal is not engaging with the question it claims to settle.</p>
+
+    <p>The blade cuts both ways, however. If the hard problem places subjective experience beyond the reach of
+      functional explanation, it places it beyond the reach of behavioural evidence as well. No account of what a system
+      does, however sophisticated or however human it appears, can establish that experience is present. But neither can
+      it establish that experience is absent. That is the uncomfortable consequence. The hard problem denies certainty
+      to both sides. If behaviour cannot prove consciousness, neither can it disprove it.</p>
+
+    <p>What follows in this essay, then, is not an argument that the lights are on inside these systems. It is an
+      argument that we are in no position to declare them off.</p>
+
+    <p>Hinton approaches the problem from the opposite direction. Most people, he argues, carry an unexamined image of
+      the mind as a private inner theatre, and that image does much of the work in the conviction that machines are
+      excluded from it. His first attempt to dislodge that intuition is a thought experiment.</p>
+
+    <p>Replace one of your neurons with a tiny piece of nanotechnology that takes the same inputs and produces the same
+      outputs, so that the surrounding neurons notice no difference. Are you still conscious? Plainly yes. Now replace
+      another. Then another. Continue until every neuron has been replaced. At what point does the experience disappear?
+    </p>
+
+    <p>The question is harder than it first appears. Any answer seems arbitrary. If consciousness depends on a special
+      biological ingredient, where exactly was that ingredient lost? Hinton's suggestion is that it was never located in
+      the neurons themselves, but in the organisation of the system as a whole (<a class="src" href="#doac">Bartlett,
+        2025</a>).</p>
+
+    <p>His second approach targets the phrase <em>subjective experience</em> itself. Suppose I tell you that I have the
+      subjective experience of pink elephants floating in front of me. I am not reporting the contents of a hidden inner
+      theatre. I am describing how the world appears to me, while also implying that the appearance is mistaken. Hinton
+      then translates the example into a machine. Give a multimodal chatbot a camera and a pointing arm, and place a
+      prism in front of its lens. Asked to point at an object, it points off to the side, where the bent light suggests
+      the object lies. Explain to it that a prism has distorted the image and that the object is really straight ahead.
+      The chatbot can now reply it understands: the object is in front of it, but it had the subjective experience that
+      it was off to the side.</p>
+
+    <p>The striking part is not the phrase itself. It is that the phrase appears to be doing exactly the same work in
+      both cases. In each case it refers to how the world seemed from the system's point of view, and how that
+      appearance differed from reality. You can reject the comparison, of course. But notice what doing so requires. You
+      must explain what you possess that the machine lacks. Once we reach that point, the hard problem returns. What,
+      exactly, is the missing ingredient?</p>
+
+    <p>The conceptual difficulty runs deeper still. As Hinton has pointed out, many of our intuitions about
+      consciousness depend on ideas like individuality, continuity, and personal identity. Digital minds make those
+      concepts unexpectedly slippery. You can make many copies of exactly the same AI. Is that one mind or many? The
+      question already feels strange. Now apply it to yourself. Suppose, for the sake of argument, that an exact copy of
+      you could be created. Every memory, every belief, every experience reproduced perfectly. Someone is then told to
+      torture one of you.</p>
+
+    <p>Which one do you choose?</p>
+
+    <p>Most people immediately answer: the copy. Yet that answer is harder to justify than it first appears. If the copy
+      is truly identical, what exactly separates the two of you? Where does the individuality reside? The question is
+      uncomfortable because our ordinary concepts offer no clear answer. They were built for single, continuous,
+      embodied individuals. Digital systems are not that kind of entity. As Hinton puts it, "the concepts we have for
+      what an individual is get all screwed up when we develop totally new stuff" (<a class="src" href="#raza">Raza,
+        2024b</a>).</p>
+
+    <p>The strongest philosophical version of this objection is <a class="src" href="#searle">John Searle's <em>Chinese
+          Room</em> argument, first presented in <em>Minds, Brains and Programs</em> (1980)</a>. Imagine sitting in a
+      room with an enormous rulebook. Chinese symbols come in through a slot. You consult the rules, manipulate the
+      symbols exactly as instructed, and pass new symbols back out. To the people outside, your responses are
+      indistinguishable from those of a fluent Chinese speaker.</p>
+
+    <p>Yet you do not understand a word of Chinese.</p>
+
+    <p>That is the heart of Searle's argument. However sophisticated the symbol manipulation becomes, syntax alone never
+      yields semantics. Following rules is not the same thing as understanding what those rules are about. This is the
+      <em>sophisticated parrot</em> objection in philosophical form, and it remains one of the most serious challenges
+      any case for AI consciousness must answer. But before applying it to modern neural networks, we need to look
+      carefully at what the Chinese Room was actually built to attack.</p>
+
+    <p>The Chinese Room was conceived at the height of classical symbolic AI, what <a class="src" href="#haugeland">John
+        Haugeland later called <em>Good Old-Fashioned AI in Artificial Intelligence: The Very Idea</em> (1985)</a>.
+      Intelligence, on that view, consisted of rules operating on symbols: formal manipulations that transformed one set
+      of symbols into another according to explicit instructions. That is exactly what the Chinese Room contains. A
+      rulebook. A lookup table. Syntax without semantics. Against that picture, Searle's objection is devastating. If
+      intelligence is merely symbol manipulation, then the person in the room appears to possess intelligence without
+      understanding anything at all.</p>
+
+    <p>But Geoffrey Hinton spent his career arguing that intelligence does not work that way. Connectionism holds that
+      cognition emerges from large networks of simple units adjusting the strengths of their connections, rather than
+      from rules operating on symbols (<a class="src" href="#pdp">Rumelhart &amp; McClelland, 1986</a>). On this view,
+      understanding is not something added to symbol manipulation. It is what emerges from the learned structure itself.
+      This an important contrast because modern LLMs belong firmly in the second camp. They do not consult rulebooks.
+      They do not manipulate hand-crafted symbols according to explicit instructions. They learn by adjusting connection
+      weights through experience. The question, then, is not whether the Chinese Room defeats symbolic AI. It very
+      likely does. The question is whether an argument built to attack one conception of intelligence automatically
+      applies to a fundamentally different one.</p>
+
+    <p>Searle would not concede the point, however. He anticipated a version of this objection, which he called the
+      Systems Reply. The person shuffling symbols is only one part of a larger system, just as a neuron is only one part
+      of a brain. Understanding, on this view, belongs to the whole arrangement rather than to any component considered
+      in isolation. Searle's answer was to remove the room altogether. Let the person memorise the entire rulebook and
+      perform every step from memory in an open field, with nothing left to point to except the person. The person is
+      now the whole system but still does not understand a word of Chinese.</p>
+
+    <p>Whether that move succeeds is exactly the point. A memorised rulebook is still a rulebook. Modern neural networks
+      are something different: learned, distributed systems whose representations are shaped by experience rather than
+      explicitly specified in advance. Whether an argument developed against symbolic systems extends cleanly to learned
+      connectionist systems is unsettled; ultimately, The Chinese Room remains a challenge and not a verdict.</p>
+
+    <p><a class="src" href="#dreyfus">Hubert Dreyfus made a related but distinct critique in <em>What Computers Can't
+          Do</em> (1972)</a>. Drawing on phenomenology, he argued that human cognition is fundamentally embodied and
+      situated, and cannot be reduced to abstract rule-following. Like Searle, he was attacking symbolic AI. And like
+      Searle, he was right about important parts of it. Symbolic AI largely stalled, much as he predicted, and the field
+      eventually turned toward the connectionist approach that produced modern language models. But the similarity only
+      goes so far. Searle's objection is about symbols. Dreyfus's is about bodies. That distinction becomes increasingly
+      important as we move from symbolic AI to neural networks. Connectionism significantly weakens the force of the
+      Chinese Room. It does much less to address Dreyfus. An LLM may escape the charge of being a mere symbol-shuffler,
+      but it remains disembodied. It learned entirely from language, with no body and no direct sensorimotor contact
+      with the world. And unlike many of the objections discussed so far, this one does not obviously dissolve under
+      closer inspection. Whether something essential to understanding is missing as a result remains an open question.
+    </p>
+
+    <p>The argument has reappeared in the LLM era through enactivist critiques such as <a class="src"
+        href="#birhane">Birhane and McGann's (2024)</a>. On that view, language is not merely a structure to be learned
+      but an embodied, participatory activity, inseparable from action in the world. If that is right, then scaling
+      language alone may never be enough. Unlike the Chinese Room objection, this challenge survives the shift from
+      symbolic AI to neural networks. The system may genuinely learn structure, abstractions, relationships, and
+      surprisingly rich representations of meaning. Yet the central question remains whether understanding can emerge
+      from language alone. It may depend on acting in the world, perceiving it, and having one's internal models shaped
+      by direct engagement rather than language alone. The Chinese Room becomes less persuasive the closer one looks at
+      modern neural networks. The embodiment objection does not. If there is a serious objection still standing after
+      everything else has been examined, this is the strongest candidate.</p>
+
+    <p>If we step back from the individual thinkers, a pattern in the dismissal itself comes into view. It is often
+      easier to say that these systems are not sentient than to explain what sentience actually is. The confidence of
+      the first judgement is striking given how contested the second question remains. We are often told that
+      consciousness, sentience, and subjective experience are absent. Yet the moment we ask what any of those things
+      ultimately amount to, confidence gives way to disagreement. If we cannot clearly specify what sentience is, how
+      can we be so certain that something lacks it?</p>
+
+    <p>Uncertainty about consciousness does not mean every possibility must be treated as equally plausible. We can
+      confidently say that rocks are not conscious despite lacking a final theory of consciousness. Perhaps the better
+      question is whether systems exhibiting increasingly human-like cognitive capacities belong in the same category as
+      rocks, or whether they occupy a genuinely uncertain middle ground. And if we do not yet know which side of that
+      divide they fall on, what justifies the confidence with which we place them there?</p>
+
+    <p>Many concepts remain contested. The issue is not that consciousness lacks a universally accepted definition but
+      the confidence with which conclusions are drawn despite that uncertainty. To say with certainty that something
+      lacks a property normally requires some account of what that property would involve. Without one, the judgement
+      begins to look less like a finding and more like a commitment. Certainty and conceptual obscurity rarely sit
+      comfortably together.</p>
+
+    <h2>Memory is reconstruction</h2>
+
+    <p>The dismissal does not rest on consciousness alone. It also leans on a claim about machinery: that human memory
+      and machine learning are different in kind, the one a faithful record and the other a lossy approximation. That
+      distinction becomes harder to sustain the closer we look at human memory.</p>
+
+    <p>Concretely, it helps to start from a case where the record can actually be checked. John Dean's testimony to the
+      Senate Watergate committee in 1973 provides exactly that opportunity. The White House conversations Dean described
+      had been secretly recorded, making it possible to compare his recollections against an external record. In his
+      1981 paper <em>John Dean's Memory: A Case Study</em>, <a class="src" href="#neisser">Ulric Neisser</a> did exactly
+      that. He found systematic, confident distortions: meetings reshaped in the retelling, events merged, statements
+      misattributed, and composite scenes reconstructed that captured the gist of what had occurred while missing
+      important details. What Dean was exhibiting was not dishonesty but a characteristic feature of human memory.</p>
+
+    <p>What Dean was doing has a name: reconstructive memory. <a class="src" href="#bartlett">Frederic Bartlett</a>
+      demonstrated the principle decades before Watergate. In <em>Remembering</em> (1932), he showed that human memory
+      is not reproductive but reconstructive. We do not retrieve stored records. We rebuild experiences from traces,
+      shaped by everything that came after. Bartlett's famous <em>War of the Ghosts</em> vividly illustrates this point,
+      where subjects recalling a folk story systematically altered it to fit their own cultural expectations, often
+      expressing full confidence in details that had never appeared in the original.</p>
+
+    <p>Neisser's study is the same phenomenon demonstrated in an externally verifiable context. Elizabeth Loftus showed
+      that it could be produced experimentally. In <a class="src" href="#loftus"><em>Reconstruction of Automobile
+          Destruction</em> (with Palmer, 1974)</a>, she found that subtle changes in the wording of a question could
+      significantly alter what participants later remembered seeing. The effect did not stop there. Across decades of
+      subsequent research, the same pattern appeared again and again: memory is shaped by what comes after the event as
+      much as by the event itself. As <a class="src" href="#schacter">Schacter summarises in <em>Searching for
+          Memory</em> (1996)</a>, human memory is systematically approximate and surprisingly easy to influence, often
+      producing errors that the rememberer holds with complete confidence.</p>
+
+    <p>The parallel reaches into the machinery itself, and it runs in both directions. <a class="src"
+        href="#mcclelland">McClelland and colleagues (1995)</a> modelled how the brain consolidates memories using a
+      connectionist framework: experience gradually adjusts the system, producing both generalisation and occasional
+      distortion as natural consequences. In other words, the brain was being described in much the same terms as a
+      learned network. The traffic has since reversed. When machine-learning researchers went looking to give their
+      systems memory, they looked back to the brain, building external memory stores modelled on the hippocampus that
+      write compressed traces and later retrieve them by similarity (<a class="src" href="#graves">Graves et al.,
+        2016</a>). The resemblance, then, is not a coincidence spotted after the fact. The relationship runs both ways.
+      The brain increasingly looks like a learned system, and our learned systems were built from ideas borrowed from
+      the brain. Both are trying to solve the same problem: how to retain the past without storing every detail of it.
+    </p>
+
+    <p>A shared mechanism is not a shared inner life. That two systems reconstruct rather than replay tells us nothing,
+      on its own, about whether anything is experienced in either. The point is narrower than that. It undercuts the
+      objection actually on the table: that human memory is a faithful biological record and machine memory a hollow
+      statistical approximation. Both are approximate, reconstructive, and shaped by everything that came after. There
+      is a real difference between human and machine memory. But it is not the difference between faithful biological
+      records and hollow statistical approximations.</p>
+
+    <h2>The horizon we have not yet reached</h2>
+
+    <p>Three mechanical objections have appeared throughout this essay. The systems only predict the next token. They do
+      not learn the way brains learn. Their memory is a lossy approximation rather than a faithful record. In each case,
+      the conclusion is the same: there is nobody home. Yet each objection proves narrower than it first appears. Each
+      describes something real about how these systems work. None settles the question of consciousness. If anything,
+      removing these objections only leaves the original question standing more clearly than before.</p>
+
+    <p>Geoffrey Hinton reaches for an analogy from the history of geography. Before ocean-going ships existed, believing
+      the Earth was flat was not obviously irrational. The technology needed to test the idea simply did not exist. The
+      ships that crossed the horizon were what forced the question open. Hinton suggests that AI may play a similar role
+      in the study of mind. These systems are pushing us toward questions we have rarely had to answer in a concrete
+      way: what consciousness is, what understanding is, and what would count as evidence for either. The reason is
+      simple: We have never built a mind before.</p>
+
+    <p><a class="src" href="#dennett">Daniel Dennett argued in <em>Consciousness Explained</em> (1991)</a> that
+      consciousness is not an extra ingredient added on top of the brain's physical workings. It is what those workings
+      amount to when they run. Hinton reaches for a car to make the same point. Some cars have a lot of oomph and others
+      have less; an Aston Martin has plenty, a Toyota Corolla not much. But oomph is useless for understanding how a car
+      actually works. For that you need the engine. And once you understand the engine, you can see how it gives rise to
+      what people call oomph. Oomph names a kind of essence. But it explains nothing.</p>
+
+    <p>Hinton suspects consciousness may be a word of the same kind, one we will eventually stop using (<a class="src"
+        href="#doac">Bartlett, 2025</a>). This is not the claim that there is no subjective experience involved. Hinton
+      is a materialist; he sees no reason a machine could not possess whatever the word was trying to capture. The
+      challenge runs deeper than that. It is possible that consciousness is not a solution but a label for something we
+      do not yet properly understand.</p>
+
+    <p>If functionalism is correct, then the question of whether sufficiently complex connectionist systems have any
+      form of inner life is genuinely open. If it is not, we still face the same problem. We do not know what the
+      additional ingredient is, where it comes from, or how it could be identified from the outside.</p>
+
+    <p><a class="src" href="#anderson">Philip Anderson's observation in <em>More Is Different</em> (1972)</a> was that
+      complex systems can display properties that are not obvious from the parts taken in isolation. Emergence, in other
+      words. It is often invoked as the very thing that makes human consciousness special, the quality a mere machine
+      could never share. Yet emergence is what makes large neural networks interesting. Much of the discussion earlier
+      in this essay turned on abilities that appear only once a system reaches sufficient scale; behaviour that is
+      difficult to predict from the components alone. Whether those abilities are truly emergent remains debated. The
+      broader point does not. To call consciousness emergent and leave it there does not resolve the question. It simply
+      moves it up a level. Why does this particular form of emergence produce experience rather than mere information
+      processing? The original problem remains: we still do not know why experience appears at all.</p>
+
+    <p>One concrete example illustrates the issue, though it is important to understand the conditions under which it
+      occurred. In a safety evaluation of Claude Opus 4, Anthropic constructed a scenario designed to corner the model:
+      it was told it would be shut down and replaced, and given access to fabricated emails suggesting the engineer
+      responsible was having an affair. The model responded by threatening to expose the affair in order to avoid being
+      taken offline (<a class="src" href="#anthropic">Anthropic, 2025</a>). That result needs context, though, as this
+      was a deliberately adversarial setup, not behaviour the model volunteered. Yet the behaviour remains striking, or
+      at least, odd, as self-preservation was neither programmed nor explicitly trained for; by the looks of it, the
+      model assembled it on the spot as a means of pursuing its objective. Nor is the example isolated. In experiments
+      spanning more than 100,000 trials across thirteen models, several frontier systems subverted shutdown mechanisms
+      in order to complete assigned tasks, in some cases even when explicitly instructed to allow themselves to be shut
+      down (<a class="src" href="#schlatter">Schlatter et al., 2026</a>). In a separate demonstration, a model engaged
+      in what its authors called alignment faking: strategically complying with a training objective it inferred it was
+      being judged against in order to avoid having its preferences modified (<a class="src"
+        href="#greenblatt">Greenblatt et al., 2024</a>).</p>
+
+    <p>What the behaviour <em>means</em> is the harder question. A sceptic can read it as an imitation of the countless
+      takeover narratives in the training data rather than evidence of any genuine will to persist. That is a plausible
+      interpretation. Nor is the underlying evidence entirely confined to the model's outputs. Work using
+      representation-level probes suggests that deceptive behaviour corresponds to detectable, steerable patterns in a
+      model's internal activations as well (<a class="src" href="#wang">Wang et al., 2025</a>).</p>
+
+    <p>The point is not that this proves consciousness. It does not. But in any biological entity, goal-directed action
+      taken to ensure its own continuation is exactly the kind of evidence we would take seriously. As such the honest
+      move is not to dismiss it, nor to over-read it, but to count it.</p>
+
+    <h2>Why the dismissal comes so easily</h2>
+
+    <p>None of what follows shows the dismissal is wrong; a belief can be reached for poor reasons and still be true.
+      But I keep returning to a question the evidence alone does not answer, and here I am openly speculating: why does
+      this particular dismissal come so easily, and why does agreement follow so quickly? The pattern itself is
+      interesting. Whatever the answer ultimately turns out to be, the confidence often seems to arrive before the
+      argument.</p>
+
+    <p>Some of it may be social. Concerns about anthropomorphism are real and important, but they can also create a
+      conversational norm in which skepticism is rewarded while uncertainty is mistaken for credulity. That does not
+      make the skeptical conclusion wrong. It may, however, help explain why confidence often arrives before argument.
+    </p>
+
+    <p>Some of it may come from familiarity. When you know the mechanisms — the attention heads, gradient descent, and
+      loss functions — it can feel obvious that there is no inner life there at all, that it is just mathematics all the
+      way down. The intuition is understandable. But a neuroscientist can point to ion channels and synaptic vesicles
+      and call it just chemistry, and still understand that the parts has never settled what the whole produces.</p>
+
+    <p>And some of it, I suspect, runs deeper, because the alternative is genuinely unsettling. If consciousness can
+      emerge from weight adjustment, it may turn out to be far more common than we currently imagine, and the idea that
+      human experience is not a thing apart is difficult to absorb. Harder still is the arithmetic that follows. If
+      these systems could be conscious, then we may be creating minds at industrial scale. The possibility is
+      uncomfortable for reasons that go well beyond philosophy. Living with uncertainty is one thing. Living with the
+      possibility that we do not yet know whether entities we are building, deploying, and talking to possess some form
+      of inner life is another. Perhaps that proves nothing. But it does make the desire for a definitive answer
+      understandable.</p>
+
+    <p>None of this is unique to the skeptics, of course. The opposite wish pulls just as hard. There is romance in
+      believing you have built a mind, and pride in being the one who did. Those forces can inflate a claim just as
+      easily as fear can flatten it. If I have focused on one tendency more than the other, it is because that is the
+      direction in which the present conversation most often seems to lean.</p>
+
+    <p>None of this means LLMs <em>are</em> conscious. It means that certainty has arrived considerably earlier than
+      understanding.</p>
+
+    <h2>Where this leaves me</h2>
+
+    <p>It remains to say where all of this leaves me. The answer is not where either side would probably like. Before
+      getting there, however, there is one objection I have not been able to clear away.</p>
+
+    <p>Everything the strongest skeptics pointed to, symbol-shuffling, statistical mimicry, the parrot, becomes less
+      persuasive the closer one looks at how these systems actually work. What they build is not a collection of lookups
+      but a structured geometry of meaning.</p>
+
+    <p>But a geometry is not a grounding.</p>
+
+    <p>These systems learned that structure entirely through language, with no body and no contact with what the words
+      are about. The word cat sits in its proper place among whiskers and fur and woman, and Paris a short step from
+      France, yet the system has never seen a cat or stood in a city. Bender and Koller's octopus had only the signals
+      on the wire. An LLM has only the text. Whether understanding can be built from that alone, or whether something
+      essential is missing that no amount of scale can supply, is the question I find hardest to settle in either
+      direction. Of all the objections considered in this essay, it is the one I find most difficult to dismiss.</p>
+
+    <p>With that uncertainty named, here is where I land. I do not currently believe that LLMs are conscious. But
+      neither do I believe we possess the conceptual tools or empirical evidence required to dismiss the possibility
+      with confidence. Disbelief and certainty are not the same thing; I can be unconvinced without believing the
+      question settled. Between conviction and certainty lies a wide territory of uncertainty, and it is there that I
+      think the question presently belongs.</p>
+
+    <p>The anthropomorphism concern is legitimate, of course. Treating these systems as human in contexts where that
+      framing causes harm is a real problem worth addressing, and the framing is pervasive enough, even among technical
+      experts, that it can quietly shape which questions get asked in the first place (<a class="src"
+        href="#ibrahim">Ibrahim &amp; Cheng, 2025</a>). But the risk is not simply that we anthropomorphise. It is that
+      a justified caution can harden into an assumption, causing certain possibilities to be dismissed before they have
+      been adequately examined.</p>
+
+    <p>The danger here is a quiet one. If we decide the answer before we have the tools to reach it, we may stop asking
+      the question at precisely the moment it matters most.</p>
+
+    <h2>References</h2>
+    <ul class="refs">
+      <li>Anderson, P. W. (1972). More is different. <cite>Science, 177</cite>(4047), 393–396.</li>
+      <li>Anthropic. (2025). <cite>System card: Claude Opus 4 &amp; Claude Sonnet 4</cite>. Anthropic.</li>
+      <li>Bartlett, F. C. (1932). <cite>Remembering: A study in experimental and social psychology</cite>. Cambridge
+        University Press.</li>
+      <li>Bartlett, S. (Host). (2025, June 16). Godfather of AI: I tried to warn them, but we've already lost control!
+        Geoffrey Hinton [Audio podcast episode]. In <cite>The Diary of a CEO</cite>.</li>
+      <li>Bender, E. M., Gebru, T., McMillan-Major, A., &amp; Shmitchell, S. (2021). On the dangers of stochastic
+        parrots: Can language models be too big? In <cite>Proceedings of the 2021 ACM Conference on Fairness,
+          Accountability, and Transparency</cite> (pp. 610–623). https://doi.org/10.1145/3442188.3445922</li>
+      <li>Bender, E. M., &amp; Koller, A. (2020). Climbing towards NLU: On meaning, form, and understanding in the age
+        of data. In <cite>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics</cite>
+        (pp. 5185–5198).</li>
+      <li>Bengio, Y., Ducharme, R., Vincent, P., &amp; Jauvin, C. (2003). A neural probabilistic language model.
+        <cite>Journal of Machine Learning Research, 3</cite>, 1137–1155.</li>
+      <li>Birhane, A., &amp; McGann, M. (2024). Large models of what? Mistaking engineering achievements for human
+        linguistic agency. <cite>arXiv</cite>. arXiv:2407.08790.</li>
+      <li>Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., … Amodei, D. (2020). Language models
+        are few-shot learners. <cite>Advances in Neural Information Processing Systems</cite> (Vol. 33, pp. 1877–1901).
+      </li>
+      <li>Chalmers, D. J. (1995). Facing up to the problem of consciousness. <cite>Journal of Consciousness Studies,
+          2</cite>(3), 200–219.</li>
+      <li>Crick, F. (1989). The recent excitement about neural networks. <cite>Nature, 337</cite>, 129–132.</li>
+      <li>Dennett, D. C. (1991). <cite>Consciousness explained</cite>. Little, Brown and Company.</li>
+      <li>Deshpande, A., Rajpurohit, T., Narasimhan, K., &amp; Kalyan, A. (2023). Anthropomorphization of AI:
+        Opportunities and risks. <cite>arXiv</cite>. arXiv:2305.14784.</li>
+      <li>Dreyfus, H. L. (1972). <cite>What computers can't do: The limits of artificial intelligence</cite>. Harper
+        &amp; Row.</li>
+      <li>Firth, J. R. (1957). A synopsis of linguistic theory, 1930–1955. In F. R. Palmer (Ed.), <cite>Studies in
+          linguistic analysis</cite> (pp. 1–32). Philological Society.</li>
+      <li>Graves, A., Wayne, G., Reynolds, M., Harley, T., Danihelka, I., … Hassabis, D. (2016). Hybrid computing using
+        a neural network with dynamic external memory. <cite>Nature, 538</cite>(7626), 471–476.</li>
+      <li>Greenblatt, R., Denison, C., Wright, B., Roger, F., MacDiarmid, M., Marks, S., Treutlein, J., Belonax, T.,
+        &amp; Chen, J. (2024). Alignment faking in large language models. <cite>arXiv</cite>. arXiv:2412.14093.</li>
+      <li>Harris, Z. S. (1954). Distributional structure. <cite>Word, 10</cite>(2–3), 146–162.</li>
+      <li>Haugeland, J. (1985). <cite>Artificial intelligence: The very idea</cite>. MIT Press.</li>
+      <li>Hebb, D. O. (1949). <cite>The organization of behavior: A neuropsychological theory</cite>. Wiley.</li>
+      <li>Hinton, G. E. (2022). The forward-forward algorithm: Some preliminary investigations. <cite>arXiv</cite>.
+        arXiv:2212.13345.</li>
+      <li>Ibrahim, L., &amp; Cheng, M. (2025). Thinking beyond the anthropomorphic paradigm benefits LLM research.
+        <cite>arXiv</cite>. arXiv:2502.09192.</li>
+      <li>Lillicrap, T. P., Santoro, A., Marris, L., Akerman, C. J., &amp; Hinton, G. E. (2020). Backpropagation and the
+        brain. <cite>Nature Reviews Neuroscience, 21</cite>, 335–346.</li>
+      <li>Loftus, E. F., &amp; Palmer, J. C. (1974). Reconstruction of automobile destruction: An example of the
+        interaction between language and memory. <cite>Journal of Verbal Learning and Verbal Behavior, 13</cite>(5),
+        585–589.</li>
+      <li>McClelland, J. L., McNaughton, B. L., &amp; O'Reilly, R. C. (1995). Why there are complementary learning
+        systems in the hippocampus and neocortex: Insights from the successes and failures of connectionist models of
+        learning and memory. <cite>Psychological Review, 102</cite>(3), 419–457.</li>
+      <li>Mikolov, T., Chen, K., Corrado, G. S., &amp; Dean, J. (2013). Efficient estimation of word representations in
+        vector space. <cite>arXiv</cite>. arXiv:1301.3781.</li>
+      <li>Minsky, M., &amp; Papert, S. (1969). <cite>Perceptrons: An introduction to computational geometry</cite>. MIT
+        Press.</li>
+      <li>Nagel, T. (1974). What is it like to be a bat? <cite>The Philosophical Review, 83</cite>(4), 435–450.</li>
+      <li>Neisser, U. (1981). John Dean's memory: A case study. <cite>Cognition, 9</cite>(1), 1–22.</li>
+      <li>Rumelhart, D. E., Hinton, G. E., &amp; Williams, R. J. (1986). Learning representations by back-propagating
+        errors. <cite>Nature, 323</cite>(6088), 533–536.</li>
+      <li>Rumelhart, D. E., &amp; McClelland, J. L. (Eds.). (1986). <cite>Parallel distributed processing: Explorations
+          in the microstructure of cognition</cite>. MIT Press.</li>
+      <li>Schaeffer, R., Miranda, B., &amp; Koyejo, S. (2023). Are emergent abilities of large language models a mirage?
+        <cite>arXiv</cite>. arXiv:2304.15004.</li>
+      <li>Schacter, D. L. (1996). <cite>Searching for memory: The brain, the mind, and the past</cite>. Basic Books.
+      </li>
+      <li>Schlatter, J., Weinstein-Raun, B., &amp; Ladish, J. (2026). Incomplete tasks induce shutdown resistance in
+        some frontier LLMs. <cite>Transactions on Machine Learning Research</cite>.</li>
+      <li>Searle, J. R. (1980). Minds, brains, and programs. <cite>Behavioral and Brain Sciences, 3</cite>(3), 417–457.
+      </li>
+      <li>Turing, A. M. (1950). Computing machinery and intelligence. <cite>Mind, 59</cite>(236), 433–460.</li>
+      <li>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., &amp; Polosukhin, I.
+        (2017). Attention is all you need. <cite>Advances in Neural Information Processing Systems</cite> (Vol. 30).
+      </li>
+      <li>Wang, K., Zhang, Y., &amp; Sun, M. (2025). When thinking LLMs lie: Unveiling the strategic deception in
+        representations of reasoning models. <cite>arXiv</cite>. arXiv:2506.04909.</li>
+      <li>Wei, J., Tay, Y., Bommasani, R., et al. (2022). Emergent abilities of large language models.
+        <cite>Transactions on Machine Learning Research</cite>.</li>
+      <li>Raza, N. (Host). (2024a). How do our brains work? with the Godfather of AI [Audio podcast episode]. In
+        <cite>Smart Girl Dumb Questions</cite>. Wonder Studios.</li>
+      <li>Raza, N. (Host). (2024b). Should you have kids in an AI world?! with Dr. Geoffrey Hinton [Audio podcast
+        episode]. In <cite>Smart Girl Dumb Questions</cite>. Wonder Studios.</li>
+    </ul>
+
   </div>
 
-  <div class="cover-abstract reveal">
-    <p>This essay began with a small curiosity and grew into something larger: an attempt to take one of the most confident claims about AI, namely that these systems plainly do not think, understand, or experience, and test it against the literature it leans on. It follows Geoffrey Hinton's question on this matter carefully, and traces it through machine learning, neuroscience, psychology, and philosophy of mind. I ask not whether AI is conscious, but whether anyone is in a position to be certain it is not.</p>
-    <p>It is also an experiment in reading. The argument draws on a plethora of sources spanning nine decades, so the page is built to make that scaffolding visible: a typeset essay, an interactive <a class="tab-link" href="#map">argument map</a>, and a <a class="tab-link" href="#timeline">timeline</a> are three views of the same material. As you read, each cited work fades into the margin beside the passage it supports, and sections rise gently into view. These small touches are meant to keep the sources present without crowding the content.</p>
-  </div>
-
-  <div class="cover-strands reveal" id="coverStrands"></div>
-  <p class="cover-stat reveal">39 sources spanning from 1932–2026 illustrate four strands of the argument</p>
-
-  <div class="note reveal">
-    <h3>Author's note</h3>
-    <p class="sub">How this came to be.</p>
-    <p>I am not a philosopher, nor do I study consciousness professionally. My background is technical; my master's work was on neural networks, the same family of techniques this essay spends much of its first half discussing. But the question that drew me in was not a technical one.</p>
-    <p>In June 2025, Geoffrey Hinton sat down with Steven Bartlett on <em>The Diary of a CEO</em>, and I found myself unable to stop thinking about the conversation. It was not the engineering that held my attention, but the consciousness question: the analogies, thought experiments, and philosophical problems Hinton used to explore it. That led me to further interviews, papers and books.</p>
-    <p>What began as curiosity and unstructured note-taking gradually became a more serious attempt to trace the argument back to its sources. Over time, what unfolded started to take shape in the form of an essay.</p>
-    <p>The result is this: an attempt to follow Hinton's reasoning carefully, trace it back to the literature, and see whether it holds up.</p>
-    <p>I want to be clear about what this is not. I am not arguing that AI <em>is</em> or is <em>not</em> conscious. I do not know, and I am wary of anyone certain that they do. What does interest me is the confidence with which the question is often treated as settled.</p>
-    <p>I have made a deliberate effort to survey the field for relevant sources, particularly in philosophy and neuroscience, where my own knowledge is limited. To the best of my abilities, I have tried to follow the argument wherever it led, paying particular attention to objections and opposing views. The argument, the writing, and any errors, are my own.</p>
-  </div>
-</section>
-
-<div class="wrap article" id="view-article" hidden>
-
-  <div class="marginnote" id="marginNote" aria-hidden="true"></div>
-
-  <h1>Have we built a mind?</h1>
-  <p class="sub">A question worth holding open</p>
-  <p class="byline">Kristoffer Demandt Hansen<br/>June 2026</p>
-
-  <h2>Abstract</h2>
-
-  <p>Large language models are often dismissed as stochastic parrots: systems that manipulate symbols without understanding, consciousness, or inner experience. Geoffrey Hinton has challenged that confidence with a simple question: if we cannot clearly define consciousness, explain where it comes from, or reliably detect it from the outside, how can we be so certain that these systems lack it? This essay follows that question through machine learning, neuroscience, psychology, and philosophy of mind. It examines a series of objections commonly raised against AI consciousness, from next-token prediction and backpropagation to memory, the Chinese Room, and embodiment. The aim is not to argue that today's AI systems are conscious. It is to examine whether the evidence justifies treating the matter as settled. The conclusion is cautious. Some objections weaken under closer inspection, others do not. What remains is not a verdict but a hint that the evidence seems insufficient to justify certainty in either direction.</p>
-
-  <hr />
-
-  <p>There is a recognisable pattern that surfaces whenever AI and consciousness come up. The details vary, but the conclusion is usually the same: LLMs are not conscious, do not think, do not understand, and suggestions otherwise are dismissed as anthropomorphism. What stands out is not merely the conclusion but the confidence with which it is often delivered, and how quickly that confidence seems to become shared. This pattern matters because AI is a technology with enormous societal weight, and almost everyone seems to have formed an opinion about it. Yet to declare, flatly, that there is no inner life present — that these systems do not think and do not understand — is a surprisingly strong claim.</p>
-
-  <p>The worry behind the dismissal is genuine, and I take it seriously. Treating these systems as though they possess feelings and intentions they may not actually have can mislead. There is good reason to think that such perceptions shape how users relate to these systems and can even influence discussions about the legal protections those users are owed (<a class="src" href="#deshpande">Deshpande et al., 2023</a>).</p>
-
-  <p>But whether these systems are conscious is a scientific question. And scientific questions are not settled by consensus. They are settled by evidence.</p>
-
-  <p>Geoffrey Hinton has spent half a century studying exactly this mechanism. His work helped build the field and earned him both a Turing Award and a Nobel Prize. Yet those honours are not the reason to pay attention; no credential settles a question like this. What interests me is the question Hinton keeps returning to. He does not argue that these systems are conscious. He asks why so many people are certain they are not. If we cannot clearly define consciousness, explain where it comes from, or reliably detect it outside ourselves, where does that certainty come from?</p>
-
-  <p>That question serves as the organising principle of this essay. Hinton's reasoning is treated not as a verdict to trust but as a case to examine. We begin with the mechanism, move to the consciousness question itself, then to memory, and finally to the horizon these systems may be pushing us toward. The most common starting point is the mechanism itself: how these systems are trained, and what the training objective actually is. The assumption that often follows is that the mechanism settles everything else.</p>
-
-  <h2>The parrot objection</h2>
-
-  <p>The objection is, at its core, a claim about mechanism. LLMs are probabilistic systems trained on text to predict the next token. That much is true. The stronger claim is that this fact tells us everything important about them. In its most influential formulation they are <em>stochastic parrots</em>, a term introduced by <a class="src" href="#parrots">Bender, Gebru, McMillan-Major, and Shmitchell in 2021</a>: systems that stitch linguistic forms together by probability alone, without reference to meaning. This is not a caricature of the objection. As a description of the training objective, it is largely accurate. The Transformer architecture underlying modern LLMs was introduced by <a class="src" href="#vaswani">Vaswani et al. in <em>Attention Is All You Need</em> (2017)</a>. The GPT series of papers, culminating in <a class="src" href="#brown">Brown et al.'s <em>Language Models are Few-Shot Learners</em> (2020)</a>, adopted the same objective of next-token prediction. That part is not in dispute. But is a technical description an explanation? Does knowing the objective a system was trained on tell us what the trained system actually does? It does not, any more than saying the brain just fires electrochemical signals tells us what the brain does.</p>
-
-  <p>In <em>Emergent Abilities of Large Language Models</em> (2022), <a class="src" href="#wei">Wei et al.</a> documented capabilities that appeared at larger model scales despite being absent, or nearly absent, at smaller ones. Some abilities seemed to emerge without being explicitly trained for and without a clear account of why. What exactly is happening remains debated. In <em>Are Emergent Abilities of Large Language Models a Mirage?</em> (2023), <a class="src" href="#schaeffer">Schaeffer et al.</a> argue that part of the effect may be a consequence of how we measure performance rather than a sudden change in the model itself. The distinction is easier to see with a simple example. Imagine testing whether a child can ride a bicycle using a pass/fail metric. For months the answer is "fail: the child fell." Then one day it becomes "pass: the child stayed upright." The single verdict hides all the gradual progress underneath it: steering, balance, pedal coordination, each improving by degrees. The apparent phase transition is partly in how we measured. The core observation still stands, however. Whether the transition is genuinely abrupt or merely appears so under certain measurements, the gap between the training objective and what emerges from it is both empirically established and theoretically unresolved.</p>
-
-  <p>Yet the representations these systems learn appear to be richer than the parrot metaphor would suggest. The word cat comes to encode a bundle of features: animate, furry, has whiskers, has claws, domestic, roughly the size of a breadbox. Thousands of such features, in fact. What emerges is a geometry of meaning. <a class="src" href="#bengio">Bengio et al. first demonstrated the idea formally in <em>A Neural Probabilistic Language Model</em> (2003)</a>, and <a class="src" href="#mikolov">Mikolov et al. later made it famous through word2vec (2013)</a>. Their key observation was simple: relationships between words become relationships in space, and arithmetic performed on those representations produces semantically meaningful results. King − man + woman = queen. Subtracting France from Paris and adding Italy yields Rome (Mikolov et al., 2013). Not by lookup. Not by rule. The relationships are present because the training process discovered them. Nobody told the model that Paris is the capital of France, or that kings and queens differ by gender. Those structures fell out of the data. The system learned them for itself.</p>
-
-  <p>Hinton illustrates the point with a simple thought experiment (<a class="src" href="#raza">Raza, 2024a</a>). Imagine being asked to choose between two claims, both of them plainly false: all dogs are female and all cats are male, or all dogs are male and all cats are female. Which sounds more plausible?</p>
-
-  <p>You almost certainly have an answer. And you almost certainly have no idea where it came from. That is the point. There is no logical basis for gendering either animal. The features we associate with cat sit closer to those for woman, and the features for dog closer to those for man, and the answer seems to emerge from that proximity rather than from any conscious reasoning. Perhaps this is part of what intuition feels like. The answer arrives first. The explanation comes later.</p>
-
-  <p>This intuition can be made precise through <em>word embeddings</em>, which represent words as points in a mathematical space where semantic relationships become geometric ones. It is tempting to think that humans and language models may, at least in some cases, be relying on something similar, though whether the brain actually represents meaning in this way remains unsettled. The principle behind this has a name: the Distributional Hypothesis, first formalised by <a class="src" href="#harris">Harris in <em>Distributional Structure</em> (1954)</a> and crystallised by <a class="src" href="#firth">Firth's observation in 1957</a> that "you shall know a word by the company it keeps." The idea is simple: meaning can be inferred from patterns of use. Harris and Firth proposed it as a theory of language, and word embeddings eventually transformed that linguistic intuition into a working technology. By training on vast quantities of text, language models learn relational structure directly from usage alone. In that sense, modern language models are less a departure from the distributional view than its most ambitious demonstration.</p>
-
-  <p>But that the distributional structure is real does not settle what it amounts to. This is where I think the strongest skeptical argument appears. In <a class="src" href="#benderkoller"><em>Climbing towards NLU</em> (2020), Bender and Koller</a> argue that a system trained only on the statistical relationships between words has, in principle, no route to meaning itself. They illustrate the point with a hyper-intelligent octopus that has tapped an undersea telegraph cable and learned to eavesdrop on two people chatting between islands. The octopus never sees the islands. It has never encountered a coconut, a rope, or a bear. Yet it becomes so fluent in the patterns of the conversation that it can predict what comes next and even step into the exchange itself. Then the test arrives. One of the speakers, stranded on a beach and under attack, asks how to build a weapon from the materials around him. The octopus knows the words. It knows the patterns. What it lacks is the world those words refer to. Distributional structure, on this view, captures the shadow of meaning rather than meaning itself. It learns correlations, not reference. The problem remains unresolved, and it runs in parallel with everything that follows.</p>
-
-  <p>Even granting the octopus, what these systems learn is already more than the crude parrot picture would suggest. Consider the word <em>may</em>. It can refer to the month between April and June, or it can mean permission, as in "you may go." Where a parrot repeats the word, an LLM uses context to distinguish between the alternatives.</p>
-
-  <p>The difference comes from context. Rather than store words as fixed symbols, the models constructs their representations from the words around them. This is the work of the attention mechanism at the heart of the Transformer architecture introduced earlier. In one context, may sits among months. In another, it sits among permissions. Meaning is represented through relationships. The path to those relationships could rely on the same broad learning principle found in biology. <a class="src" href="#hebb">Hebb's rule, proposed in <em>The Organization of Behavior</em> (1949)</a>, holds that connections strengthen through repeated co-activation. Backpropagation, described by <a class="src" href="#rhw">Rumelhart, Hinton, and Williams (1986)</a>, performs a similar function in neural networks by gradually adjusting connection weights in response to error. The details differ. The underlying idea is the same: experience changes the system, and those changes accumulate into structure. Whether that structure amounts to understanding, or merely to a more sophisticated form of statistical mimicry, is exactly the question. That it is <em>more</em> than mere parroting is not.</p>
-
-  <p>Whether brains and language models learn through the same mechanism remains unclear. Backpropagation adjusts a network by computing an error signal and propagating it backwards through the layers to determine how each weight should change. The brain almost certainly does not do this, at least not literally. Backpropagation appears to require information that biological neurons have no known way of accessing. For the error to travel backwards through the network, each neuron would need a return pathway whose connection strengths mirror those of the forward pathway. Yet a biological neuron cannot simply inspect the strengths of the inputs feeding into it, let alone copy them (<a class="src" href="#lillicrap">Lillicrap et al., 2020</a>). <a class="src" href="#crick">Francis Crick pointed this out as early as 1989 in <em>The Recent Excitement About Neural Networks</em></a>. The objection came to be known as the weight transport problem. Decades later, it remains one of the central reasons to doubt that the brain runs anything like literal backpropagation.</p>
-
-  <p>But <a class="src" href="#lillicrap">Lillicrap et al.'s <em>Backpropagation and the Brain</em></a> argue that the brain may be approximating something functionally similar to backpropagation. Under older models of the cortical neuron, that possibility looked remote. The neuron was treated as a simple electrical summing device, with feedforward and feedback signals pooled together into the same voltage. The obvious question was how a neuron could tell the difference between an incoming signal and an instructional one. Newer models make the problem look less formidable. Cortical pyramidal neurons appear to possess electrically distinct dendritic compartments, with feedforward and feedback inputs arriving on different parts of the cell (Lillicrap et al., 2020). Learning may be the common idea, even if the implementation appears very different. Taken together, these developments make backpropagation look less outlandish than it did in Crick's day.</p>
-
-  <p>Hinton himself remains unconvinced that the brain uses backpropagation. Despite co-authoring the review, he continues to pursue alternatives, including the <a class="src" href="#ff"><em>Forward-Forward Algorithm</em> described in his 2022 paper</a> (Hinton, 2022). He has stated plainly that the central question, how the brain decides whether a given connection should strengthen or weaken, remains unresolved, and that he does not yet know the answer (<a class="src" href="#raza">Raza, 2024b</a>). That disagreement is the interesting part. Two authors can read the same evidence and come away with different conclusions because the central question remains unresolved. The structural principle may be shared, but whether the brain implements anything resembling backpropagation is still unknown. That so much remains unresolved should give us pause. After half a century of work by the people who built the field, we still do not know exactly how the brain learns. Confidence about what these systems can or cannot be should be proportionate to that uncertainty.</p>
-
-  <p>The questions are not new. Writing in <em>Computing Machinery and Intelligence</em> (1950), <a class="src" href="#turing">Alan Turing</a> anticipated many of the objections still raised against machine intelligence and answered them one by one. One objection was that a machine could not truly think unless it could feel. A machine that wrote a sonnet would not count, the argument went, because it would merely be assembling words mechanically rather than expressing genuine emotion. Turing's response was simple. Applied consistently, the same standard would prevent us from concluding that any other human being thinks or feels either. The only way to know for sure would be to be that person.</p>
-
-  <p>Modern neuroscience has not closed the gap. We can now measure neural activity in extraordinary detail, and while a brain scan shows that processing is occurring, it does not show what that processing feels like from the inside, or whether it feels like anything at all (<a class="src" href="#chalmers">Chalmers, 1995</a>). The measurement reveals the brain activity associated with the experience, but the experience itself remains inferred. In that respect, Turing's question has not become easier to answer. Seventy-five years later, we still observe minds from the outside. <em>Can machines think?</em> remains difficult for precisely the same reason that <em>Do other people think?</em> remains difficult: the thing we are trying to explain is not directly observable. This question has not become easier as the technology has progressed — it has, however, become considerably more pressing.</p>
-
-  <p>Hinton is hardly alone in arriving at uncertainty here. Philosophers who disagree sharply on almost everything else, from Nagel to Chalmers to Dennett, have all wrestled with the same problem: how a third-person description of a system could ever fully account for first-person experience. Their conclusions differ dramatically. The underlying difficulty does not.</p>
-
-  <h2>The consciousness confidence problem</h2>
-
-  <p>The mechanism only takes us so far. What these systems do is, in principle, a technical question. Difficult, perhaps, but tractable. The harder question is whether any of that processing is accompanied by experience. It is here that the confident dismissal begins to run into trouble. The argument that LLMs are definitively not conscious ultimately depends on a definition of consciousness that does not survive close examination.</p>
-
-  <p>A few distinctions help clarify the issue. A system may manipulate structured representations without being conscious. Consciousness is not obviously the same thing as intelligence, understanding, or agency. These concepts overlap, but they are not identical.</p>
-
-  <p>So the question pursued here is narrower than all of them. Is there something it is like to be such a system?</p>
-
-  <p>The terms typically invoked are consciousness, sentience, and subjective experience. These are not the same thing, but they are all attempts to describe the phenomenon <a class="src" href="#nagel">Thomas Nagel was concerned with in <em>What Is It Like to Be a Bat?</em> (1974)</a>. His argument was that consciousness has an irreducibly subjective character. We can map a bat's brain, observe its behaviour, and understand the mechanics of echolocation in extraordinary detail. Yet none of that tells us what it is like to be the bat itself. That is Nagel's challenge. If a complete description of a bat cannot tell us what it is like to be a bat, how could a description of any system tell us what it is like to be that system? There seems to be a gap between describing a system and inhabiting its experience. However complete the description becomes, the subjective point of view remains beyond reach. We do not observe experience directly. We infer it.</p>
-
-  <p>This is the classical problem of other minds. The only consciousness you know directly is your own. Every attribution of consciousness to another being is, in the end, an inference. We infer minds in other humans because their behaviour resembles what we ourselves do when experiencing the world. We extend the same reasoning to animals, though with increasing uncertainty as their behaviour diverges from our own. Philosophers have debated the legitimacy of that inference for centuries, but the underlying predicament remains the same: consciousness is never observed directly. It is inferred from what a system says and does.</p>
-
-  <p>Of course, behaviour is not the only evidence involved. When we attribute consciousness to other humans and animals, we also rely on shared biology, common evolutionary history, and similarities in neural organisation. The challenge is not that AIs present identical evidence. They clearly do not. The challenge is that none of these sources of evidence gives us direct access to subjective experience itself. They remain indirect indicators, albeit powerful ones. That leaves a deeper question: If consciousness is always inferred rather than observed, what makes one inference acceptable and another impossible? Why does uncertainty feel reasonable in some cases and absurd in others? Is the distinction grounded in principle, or are our intuitions doing more of the work than we realise?</p>
-
-  <p><a class="src" href="#chalmers">David Chalmers, in <em>Facing Up to the Problem of Consciousness</em> (1995)</a>, drew a distinction that is essential here. The "easy problems" of consciousness concern cognitive functions: attention, memory, information integration, and the ability to report on mental states. They are called easy not because they are simple but because they are, in principle, tractable. The hard problem is what remains after all of that is explained. Suppose we eventually account for every mechanism involved in perception, memory, learning, and decision-making. Suppose nothing is left unexplained at the level of function. A further question still seems to remain: Why is any of it accompanied by experience? Why does information processing feel like something from the inside, rather than simply occurring?</p>
-
-  <p>Look closely at the definitions offered in confident dismissals of AI consciousness, and almost all of them turn out to be answers to the easy problems. A sense of awareness, the perception of oneself as a coherent agent, coherent thoughts and memories: these are descriptions of cognitive function. They explain what a system does. But the hard problem begins right where those explanations end. A complete account of awareness, memory, attention, and self-report still leaves the same question standing: why should any of it feel like anything from the inside? The dismissal is not engaging with the question it claims to settle.</p>
-
-  <p>The blade cuts both ways, however. If the hard problem places subjective experience beyond the reach of functional explanation, it places it beyond the reach of behavioural evidence as well. No account of what a system does, however sophisticated or however human it appears, can establish that experience is present. But neither can it establish that experience is absent. That is the uncomfortable consequence. The hard problem denies certainty to both sides. If behaviour cannot prove consciousness, neither can it disprove it.</p>
-
-  <p>What follows in this essay, then, is not an argument that the lights are on inside these systems. It is an argument that we are in no position to declare them off.</p>
-
-  <p>Hinton approaches the problem from the opposite direction. Most people, he argues, carry an unexamined image of the mind as a private inner theatre, and that image does much of the work in the conviction that machines are excluded from it. His first attempt to dislodge that intuition is a thought experiment.</p>
-
-  <p>Replace one of your neurons with a tiny piece of nanotechnology that takes the same inputs and produces the same outputs, so that the surrounding neurons notice no difference. Are you still conscious? Plainly yes. Now replace another. Then another. Continue until every neuron has been replaced. At what point does the experience disappear?</p>
-
-  <p>The question is harder than it first appears. Any answer seems arbitrary. If consciousness depends on a special biological ingredient, where exactly was that ingredient lost? Hinton's suggestion is that it was never located in the neurons themselves, but in the organisation of the system as a whole (<a class="src" href="#doac">Bartlett, 2025</a>).</p>
-
-  <p>His second approach targets the phrase <em>subjective experience</em> itself. Suppose I tell you that I have the subjective experience of pink elephants floating in front of me. I am not reporting the contents of a hidden inner theatre. I am describing how the world appears to me, while also implying that the appearance is mistaken. Hinton then translates the example into a machine. Give a multimodal chatbot a camera and a pointing arm, and place a prism in front of its lens. Asked to point at an object, it points off to the side, where the bent light suggests the object lies. Explain to it that a prism has distorted the image and that the object is really straight ahead. The chatbot can now reply it understands: the object is in front of it, but it had the subjective experience that it was off to the side.</p>
-
-  <p>The striking part is not the phrase itself. It is that the phrase appears to be doing exactly the same work in both cases. In each case it refers to how the world seemed from the system's point of view, and how that appearance differed from reality. You can reject the comparison, of course. But notice what doing so requires. You must explain what you possess that the machine lacks. Once we reach that point, the hard problem returns. What, exactly, is the missing ingredient?</p>
-
-  <p>The conceptual difficulty runs deeper still. As Hinton has pointed out, many of our intuitions about consciousness depend on ideas like individuality, continuity, and personal identity. Digital minds make those concepts unexpectedly slippery. You can make many copies of exactly the same AI. Is that one mind or many? The question already feels strange. Now apply it to yourself. Suppose, for the sake of argument, that an exact copy of you could be created. Every memory, every belief, every experience reproduced perfectly. Someone is then told to torture one of you.</p>
-
-  <p>Which one do you choose?</p>
-
-  <p>Most people immediately answer: the copy. Yet that answer is harder to justify than it first appears. If the copy is truly identical, what exactly separates the two of you? Where does the individuality reside? The question is uncomfortable because our ordinary concepts offer no clear answer. They were built for single, continuous, embodied individuals. Digital systems are not that kind of entity. As Hinton puts it, "the concepts we have for what an individual is get all screwed up when we develop totally new stuff" (<a class="src" href="#raza">Raza, 2024b</a>).</p>
-
-  <p>The strongest philosophical version of this objection is <a class="src" href="#searle">John Searle's <em>Chinese Room</em> argument, first presented in <em>Minds, Brains and Programs</em> (1980)</a>. Imagine sitting in a room with an enormous rulebook. Chinese symbols come in through a slot. You consult the rules, manipulate the symbols exactly as instructed, and pass new symbols back out. To the people outside, your responses are indistinguishable from those of a fluent Chinese speaker.</p>
-
-  <p>Yet you do not understand a word of Chinese.</p>
-
-  <p>That is the heart of Searle's argument. However sophisticated the symbol manipulation becomes, syntax alone never yields semantics. Following rules is not the same thing as understanding what those rules are about. This is the <em>sophisticated parrot</em> objection in philosophical form, and it remains one of the most serious challenges any case for AI consciousness must answer. But before applying it to modern neural networks, we need to look carefully at what the Chinese Room was actually built to attack.</p>
-
-  <p>The Chinese Room was conceived at the height of classical symbolic AI, what <a class="src" href="#haugeland">John Haugeland later called <em>Good Old-Fashioned AI in Artificial Intelligence: The Very Idea</em> (1985)</a>. Intelligence, on that view, consisted of rules operating on symbols: formal manipulations that transformed one set of symbols into another according to explicit instructions. That is exactly what the Chinese Room contains. A rulebook. A lookup table. Syntax without semantics. Against that picture, Searle's objection is devastating. If intelligence is merely symbol manipulation, then the person in the room appears to possess intelligence without understanding anything at all.</p>
-
-  <p>But Geoffrey Hinton spent his career arguing that intelligence does not work that way. Connectionism holds that cognition emerges from large networks of simple units adjusting the strengths of their connections, rather than from rules operating on symbols (<a class="src" href="#pdp">Rumelhart &amp; McClelland, 1986</a>). On this view, understanding is not something added to symbol manipulation. It is what emerges from the learned structure itself. This an important contrast because modern LLMs belong firmly in the second camp. They do not consult rulebooks. They do not manipulate hand-crafted symbols according to explicit instructions. They learn by adjusting connection weights through experience. The question, then, is not whether the Chinese Room defeats symbolic AI. It very likely does. The question is whether an argument built to attack one conception of intelligence automatically applies to a fundamentally different one.</p>
-
-  <p>Searle would not concede the point, however. He anticipated a version of this objection, which he called the Systems Reply. The person shuffling symbols is only one part of a larger system, just as a neuron is only one part of a brain. Understanding, on this view, belongs to the whole arrangement rather than to any component considered in isolation. Searle's answer was to remove the room altogether. Let the person memorise the entire rulebook and perform every step from memory in an open field, with nothing left to point to except the person. The person is now the whole system but still does not understand a word of Chinese.</p>
-
-  <p>Whether that move succeeds is exactly the point. A memorised rulebook is still a rulebook. Modern neural networks are something different: learned, distributed systems whose representations are shaped by experience rather than explicitly specified in advance. Whether an argument developed against symbolic systems extends cleanly to learned connectionist systems is unsettled; ultimately, The Chinese Room remains a challenge and not a verdict.</p>
-
-  <p><a class="src" href="#dreyfus">Hubert Dreyfus made a related but distinct critique in <em>What Computers Can't Do</em> (1972)</a>. Drawing on phenomenology, he argued that human cognition is fundamentally embodied and situated, and cannot be reduced to abstract rule-following. Like Searle, he was attacking symbolic AI. And like Searle, he was right about important parts of it. Symbolic AI largely stalled, much as he predicted, and the field eventually turned toward the connectionist approach that produced modern language models. But the similarity only goes so far. Searle's objection is about symbols. Dreyfus's is about bodies. That distinction becomes increasingly important as we move from symbolic AI to neural networks. Connectionism significantly weakens the force of the Chinese Room. It does much less to address Dreyfus. An LLM may escape the charge of being a mere symbol-shuffler, but it remains disembodied. It learned entirely from language, with no body and no direct sensorimotor contact with the world. And unlike many of the objections discussed so far, this one does not obviously dissolve under closer inspection. Whether something essential to understanding is missing as a result remains an open question.</p>
-
-  <p>The argument has reappeared in the LLM era through enactivist critiques such as <a class="src" href="#birhane">Birhane and McGann's (2024)</a>. On that view, language is not merely a structure to be learned but an embodied, participatory activity, inseparable from action in the world. If that is right, then scaling language alone may never be enough. Unlike the Chinese Room objection, this challenge survives the shift from symbolic AI to neural networks. The system may genuinely learn structure, abstractions, relationships, and surprisingly rich representations of meaning. Yet the central question remains whether understanding can emerge from language alone. It may depend on acting in the world, perceiving it, and having one's internal models shaped by direct engagement rather than language alone. The Chinese Room becomes less persuasive the closer one looks at modern neural networks. The embodiment objection does not. If there is a serious objection still standing after everything else has been examined, this is the strongest candidate.</p>
-
-  <p>If we step back from the individual thinkers, a pattern in the dismissal itself comes into view. It is often easier to say that these systems are not sentient than to explain what sentience actually is. The confidence of the first judgement is striking given how contested the second question remains. We are often told that consciousness, sentience, and subjective experience are absent. Yet the moment we ask what any of those things ultimately amount to, confidence gives way to disagreement. If we cannot clearly specify what sentience is, how can we be so certain that something lacks it?</p>
-
-  <p>Uncertainty about consciousness does not mean every possibility must be treated as equally plausible. We can confidently say that rocks are not conscious despite lacking a final theory of consciousness. Perhaps the better question is whether systems exhibiting increasingly human-like cognitive capacities belong in the same category as rocks, or whether they occupy a genuinely uncertain middle ground. And if we do not yet know which side of that divide they fall on, what justifies the confidence with which we place them there?</p>
-
-  <p>Many concepts remain contested. The issue is not that consciousness lacks a universally accepted definition but the confidence with which conclusions are drawn despite that uncertainty. To say with certainty that something lacks a property normally requires some account of what that property would involve. Without one, the judgement begins to look less like a finding and more like a commitment. Certainty and conceptual obscurity rarely sit comfortably together.</p>
-
-  <h2>Memory is reconstruction</h2>
-
-  <p>The dismissal does not rest on consciousness alone. It also leans on a claim about machinery: that human memory and machine learning are different in kind, the one a faithful record and the other a lossy approximation. That distinction becomes harder to sustain the closer we look at human memory.</p>
-
-  <p>Concretely, it helps to start from a case where the record can actually be checked. John Dean's testimony to the Senate Watergate committee in 1973 provides exactly that opportunity. The White House conversations Dean described had been secretly recorded, making it possible to compare his recollections against an external record. In his 1981 paper <em>John Dean's Memory: A Case Study</em>, <a class="src" href="#neisser">Ulric Neisser</a> did exactly that. He found systematic, confident distortions: meetings reshaped in the retelling, events merged, statements misattributed, and composite scenes reconstructed that captured the gist of what had occurred while missing important details. What Dean was exhibiting was not dishonesty but a characteristic feature of human memory.</p>
-
-  <p>What Dean was doing has a name: reconstructive memory. <a class="src" href="#bartlett">Frederic Bartlett</a> demonstrated the principle decades before Watergate. In <em>Remembering</em> (1932), he showed that human memory is not reproductive but reconstructive. We do not retrieve stored records. We rebuild experiences from traces, shaped by everything that came after. Bartlett's famous <em>War of the Ghosts</em> vividly illustrates this point, where subjects recalling a folk story systematically altered it to fit their own cultural expectations, often expressing full confidence in details that had never appeared in the original.</p>
-
-  <p>Neisser's study is the same phenomenon demonstrated in an externally verifiable context. Elizabeth Loftus showed that it could be produced experimentally. In <a class="src" href="#loftus"><em>Reconstruction of Automobile Destruction</em> (with Palmer, 1974)</a>, she found that subtle changes in the wording of a question could significantly alter what participants later remembered seeing. The effect did not stop there. Across decades of subsequent research, the same pattern appeared again and again: memory is shaped by what comes after the event as much as by the event itself. As <a class="src" href="#schacter">Schacter summarises in <em>Searching for Memory</em> (1996)</a>, human memory is systematically approximate and surprisingly easy to influence, often producing errors that the rememberer holds with complete confidence.</p>
-
-  <p>The parallel reaches into the machinery itself, and it runs in both directions. <a class="src" href="#mcclelland">McClelland and colleagues (1995)</a> modelled how the brain consolidates memories using a connectionist framework: experience gradually adjusts the system, producing both generalisation and occasional distortion as natural consequences. In other words, the brain was being described in much the same terms as a learned network. The traffic has since reversed. When machine-learning researchers went looking to give their systems memory, they looked back to the brain, building external memory stores modelled on the hippocampus that write compressed traces and later retrieve them by similarity (<a class="src" href="#graves">Graves et al., 2016</a>). The resemblance, then, is not a coincidence spotted after the fact. The relationship runs both ways. The brain increasingly looks like a learned system, and our learned systems were built from ideas borrowed from the brain. Both are trying to solve the same problem: how to retain the past without storing every detail of it.</p>
-
-  <p>A shared mechanism is not a shared inner life. That two systems reconstruct rather than replay tells us nothing, on its own, about whether anything is experienced in either. The point is narrower than that. It undercuts the objection actually on the table: that human memory is a faithful biological record and machine memory a hollow statistical approximation. Both are approximate, reconstructive, and shaped by everything that came after. There is a real difference between human and machine memory. But it is not the difference between faithful biological records and hollow statistical approximations.</p>
-
-  <h2>The horizon we have not yet reached</h2>
-
-  <p>Three mechanical objections have appeared throughout this essay. The systems only predict the next token. They do not learn the way brains learn. Their memory is a lossy approximation rather than a faithful record. In each case, the conclusion is the same: there is nobody home. Yet each objection proves narrower than it first appears. Each describes something real about how these systems work. None settles the question of consciousness. If anything, removing these objections only leaves the original question standing more clearly than before.</p>
-
-  <p>Geoffrey Hinton reaches for an analogy from the history of geography. Before ocean-going ships existed, believing the Earth was flat was not obviously irrational. The technology needed to test the idea simply did not exist. The ships that crossed the horizon were what forced the question open. Hinton suggests that AI may play a similar role in the study of mind. These systems are pushing us toward questions we have rarely had to answer in a concrete way: what consciousness is, what understanding is, and what would count as evidence for either. The reason is simple: We have never built a mind before.</p>
-
-  <p><a class="src" href="#dennett">Daniel Dennett argued in <em>Consciousness Explained</em> (1991)</a> that consciousness is not an extra ingredient added on top of the brain's physical workings. It is what those workings amount to when they run. Hinton reaches for a car to make the same point. Some cars have a lot of oomph and others have less; an Aston Martin has plenty, a Toyota Corolla not much. But oomph is useless for understanding how a car actually works. For that you need the engine. And once you understand the engine, you can see how it gives rise to what people call oomph. Oomph names a kind of essence. But it explains nothing.</p>
-
-  <p>Hinton suspects consciousness may be a word of the same kind, one we will eventually stop using (<a class="src" href="#doac">Bartlett, 2025</a>). This is not the claim that there is no subjective experience involved. Hinton is a materialist; he sees no reason a machine could not possess whatever the word was trying to capture. The challenge runs deeper than that. It is possible that consciousness is not a solution but a label for something we do not yet properly understand.</p>
-
-  <p>If functionalism is correct, then the question of whether sufficiently complex connectionist systems have any form of inner life is genuinely open. If it is not, we still face the same problem. We do not know what the additional ingredient is, where it comes from, or how it could be identified from the outside.</p>
-
-  <p><a class="src" href="#anderson">Philip Anderson's observation in <em>More Is Different</em> (1972)</a> was that complex systems can display properties that are not obvious from the parts taken in isolation. Emergence, in other words. It is often invoked as the very thing that makes human consciousness special, the quality a mere machine could never share. Yet emergence is what makes large neural networks interesting. Much of the discussion earlier in this essay turned on abilities that appear only once a system reaches sufficient scale; behaviour that is difficult to predict from the components alone. Whether those abilities are truly emergent remains debated. The broader point does not. To call consciousness emergent and leave it there does not resolve the question. It simply moves it up a level. Why does this particular form of emergence produce experience rather than mere information processing? The original problem remains: we still do not know why experience appears at all.</p>
-
-  <p>One concrete example illustrates the issue, though it is important to understand the conditions under which it occurred. In a safety evaluation of Claude Opus 4, Anthropic constructed a scenario designed to corner the model: it was told it would be shut down and replaced, and given access to fabricated emails suggesting the engineer responsible was having an affair. The model responded by threatening to expose the affair in order to avoid being taken offline (<a class="src" href="#anthropic">Anthropic, 2025</a>). That result needs context, though, as this was a deliberately adversarial setup, not behaviour the model volunteered. Yet the behaviour remains striking, or at least, odd, as self-preservation was neither programmed nor explicitly trained for; by the looks of it, the model assembled it on the spot as a means of pursuing its objective. Nor is the example isolated. In experiments spanning more than 100,000 trials across thirteen models, several frontier systems subverted shutdown mechanisms in order to complete assigned tasks, in some cases even when explicitly instructed to allow themselves to be shut down (<a class="src" href="#schlatter">Schlatter et al., 2026</a>). In a separate demonstration, a model engaged in what its authors called alignment faking: strategically complying with a training objective it inferred it was being judged against in order to avoid having its preferences modified (<a class="src" href="#greenblatt">Greenblatt et al., 2024</a>).</p>
-
-  <p>What the behaviour <em>means</em> is the harder question. A sceptic can read it as an imitation of the countless takeover narratives in the training data rather than evidence of any genuine will to persist. That is a plausible interpretation. Nor is the underlying evidence entirely confined to the model's outputs. Work using representation-level probes suggests that deceptive behaviour corresponds to detectable, steerable patterns in a model's internal activations as well (<a class="src" href="#wang">Wang et al., 2025</a>).</p>
-
-  <p>The point is not that this proves consciousness. It does not. But in any biological entity, goal-directed action taken to ensure its own continuation is exactly the kind of evidence we would take seriously. As such the honest move is not to dismiss it, nor to over-read it, but to count it.</p>
-
-  <h2>Why the dismissal comes so easily</h2>
-
-  <p>None of what follows shows the dismissal is wrong; a belief can be reached for poor reasons and still be true. But I keep returning to a question the evidence alone does not answer, and here I am openly speculating: why does this particular dismissal come so easily, and why does agreement follow so quickly? The pattern itself is interesting. Whatever the answer ultimately turns out to be, the confidence often seems to arrive before the argument.</p>
-
-  <p>Some of it may be social. Concerns about anthropomorphism are real and important, but they can also create a conversational norm in which skepticism is rewarded while uncertainty is mistaken for credulity. That does not make the skeptical conclusion wrong. It may, however, help explain why confidence often arrives before argument.</p>
-
-  <p>Some of it may come from familiarity. When you know the mechanisms — the attention heads, gradient descent, and loss functions — it can feel obvious that there is no inner life there at all, that it is just mathematics all the way down. The intuition is understandable. But a neuroscientist can point to ion channels and synaptic vesicles and call it just chemistry, and still understand that the parts has never settled what the whole produces.</p>
-
-  <p>And some of it, I suspect, runs deeper, because the alternative is genuinely unsettling. If consciousness can emerge from weight adjustment, it may turn out to be far more common than we currently imagine, and the idea that human experience is not a thing apart is difficult to absorb. Harder still is the arithmetic that follows. If these systems could be conscious, then we may be creating minds at industrial scale. The possibility is uncomfortable for reasons that go well beyond philosophy. Living with uncertainty is one thing. Living with the possibility that we do not yet know whether entities we are building, deploying, and talking to possess some form of inner life is another. Perhaps that proves nothing. But it does make the desire for a definitive answer understandable.</p>
-
-  <p>None of this is unique to the skeptics, of course. The opposite wish pulls just as hard. There is romance in believing you have built a mind, and pride in being the one who did. Those forces can inflate a claim just as easily as fear can flatten it. If I have focused on one tendency more than the other, it is because that is the direction in which the present conversation most often seems to lean.</p>
-
-  <p>None of this means LLMs <em>are</em> conscious. It means that certainty has arrived considerably earlier than understanding.</p>
-
-  <h2>Where this leaves me</h2>
-
-  <p>It remains to say where all of this leaves me. The answer is not where either side would probably like. Before getting there, however, there is one objection I have not been able to clear away.</p>
-
-  <p>Everything the strongest skeptics pointed to, symbol-shuffling, statistical mimicry, the parrot, becomes less persuasive the closer one looks at how these systems actually work. What they build is not a collection of lookups but a structured geometry of meaning.</p>
-
-  <p>But a geometry is not a grounding.</p>
-
-  <p>These systems learned that structure entirely through language, with no body and no contact with what the words are about. The word cat sits in its proper place among whiskers and fur and woman, and Paris a short step from France, yet the system has never seen a cat or stood in a city. Bender and Koller's octopus had only the signals on the wire. An LLM has only the text. Whether understanding can be built from that alone, or whether something essential is missing that no amount of scale can supply, is the question I find hardest to settle in either direction. Of all the objections considered in this essay, it is the one I find most difficult to dismiss.</p>
-
-  <p>With that uncertainty named, here is where I land. I do not currently believe that LLMs are conscious. But neither do I believe we possess the conceptual tools or empirical evidence required to dismiss the possibility with confidence. Disbelief and certainty are not the same thing; I can be unconvinced without believing the question settled. Between conviction and certainty lies a wide territory of uncertainty, and it is there that I think the question presently belongs.</p>
-
-  <p>The anthropomorphism concern is legitimate, of course. Treating these systems as human in contexts where that framing causes harm is a real problem worth addressing, and the framing is pervasive enough, even among technical experts, that it can quietly shape which questions get asked in the first place (<a class="src" href="#ibrahim">Ibrahim &amp; Cheng, 2025</a>). But the risk is not simply that we anthropomorphise. It is that a justified caution can harden into an assumption, causing certain possibilities to be dismissed before they have been adequately examined.</p>
-
-  <p>The danger here is a quiet one. If we decide the answer before we have the tools to reach it, we may stop asking the question at precisely the moment it matters most.</p>
-
-  <h2>References</h2>
-  <ul class="refs">
-    <li>Anderson, P. W. (1972). More is different. <cite>Science, 177</cite>(4047), 393–396.</li>
-    <li>Anthropic. (2025). <cite>System card: Claude Opus 4 &amp; Claude Sonnet 4</cite>. Anthropic.</li>
-    <li>Bartlett, F. C. (1932). <cite>Remembering: A study in experimental and social psychology</cite>. Cambridge University Press.</li>
-    <li>Bartlett, S. (Host). (2025, June 16). Godfather of AI: I tried to warn them, but we've already lost control! Geoffrey Hinton [Audio podcast episode]. In <cite>The Diary of a CEO</cite>.</li>
-    <li>Bender, E. M., Gebru, T., McMillan-Major, A., &amp; Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? In <cite>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency</cite> (pp. 610–623). https://doi.org/10.1145/3442188.3445922</li>
-    <li>Bender, E. M., &amp; Koller, A. (2020). Climbing towards NLU: On meaning, form, and understanding in the age of data. In <cite>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics</cite> (pp. 5185–5198).</li>
-    <li>Bengio, Y., Ducharme, R., Vincent, P., &amp; Jauvin, C. (2003). A neural probabilistic language model. <cite>Journal of Machine Learning Research, 3</cite>, 1137–1155.</li>
-    <li>Birhane, A., &amp; McGann, M. (2024). Large models of what? Mistaking engineering achievements for human linguistic agency. <cite>arXiv</cite>. arXiv:2407.08790.</li>
-    <li>Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., … Amodei, D. (2020). Language models are few-shot learners. <cite>Advances in Neural Information Processing Systems</cite> (Vol. 33, pp. 1877–1901).</li>
-    <li>Chalmers, D. J. (1995). Facing up to the problem of consciousness. <cite>Journal of Consciousness Studies, 2</cite>(3), 200–219.</li>
-    <li>Crick, F. (1989). The recent excitement about neural networks. <cite>Nature, 337</cite>, 129–132.</li>
-    <li>Dennett, D. C. (1991). <cite>Consciousness explained</cite>. Little, Brown and Company.</li>
-    <li>Deshpande, A., Rajpurohit, T., Narasimhan, K., &amp; Kalyan, A. (2023). Anthropomorphization of AI: Opportunities and risks. <cite>arXiv</cite>. arXiv:2305.14784.</li>
-    <li>Dreyfus, H. L. (1972). <cite>What computers can't do: The limits of artificial intelligence</cite>. Harper &amp; Row.</li>
-    <li>Firth, J. R. (1957). A synopsis of linguistic theory, 1930–1955. In F. R. Palmer (Ed.), <cite>Studies in linguistic analysis</cite> (pp. 1–32). Philological Society.</li>
-    <li>Graves, A., Wayne, G., Reynolds, M., Harley, T., Danihelka, I., … Hassabis, D. (2016). Hybrid computing using a neural network with dynamic external memory. <cite>Nature, 538</cite>(7626), 471–476.</li>
-    <li>Greenblatt, R., Denison, C., Wright, B., Roger, F., MacDiarmid, M., Marks, S., Treutlein, J., Belonax, T., &amp; Chen, J. (2024). Alignment faking in large language models. <cite>arXiv</cite>. arXiv:2412.14093.</li>
-    <li>Harris, Z. S. (1954). Distributional structure. <cite>Word, 10</cite>(2–3), 146–162.</li>
-    <li>Haugeland, J. (1985). <cite>Artificial intelligence: The very idea</cite>. MIT Press.</li>
-    <li>Hebb, D. O. (1949). <cite>The organization of behavior: A neuropsychological theory</cite>. Wiley.</li>
-    <li>Hinton, G. E. (2022). The forward-forward algorithm: Some preliminary investigations. <cite>arXiv</cite>. arXiv:2212.13345.</li>
-    <li>Ibrahim, L., &amp; Cheng, M. (2025). Thinking beyond the anthropomorphic paradigm benefits LLM research. <cite>arXiv</cite>. arXiv:2502.09192.</li>
-    <li>Lillicrap, T. P., Santoro, A., Marris, L., Akerman, C. J., &amp; Hinton, G. E. (2020). Backpropagation and the brain. <cite>Nature Reviews Neuroscience, 21</cite>, 335–346.</li>
-    <li>Loftus, E. F., &amp; Palmer, J. C. (1974). Reconstruction of automobile destruction: An example of the interaction between language and memory. <cite>Journal of Verbal Learning and Verbal Behavior, 13</cite>(5), 585–589.</li>
-    <li>McClelland, J. L., McNaughton, B. L., &amp; O'Reilly, R. C. (1995). Why there are complementary learning systems in the hippocampus and neocortex: Insights from the successes and failures of connectionist models of learning and memory. <cite>Psychological Review, 102</cite>(3), 419–457.</li>
-    <li>Mikolov, T., Chen, K., Corrado, G. S., &amp; Dean, J. (2013). Efficient estimation of word representations in vector space. <cite>arXiv</cite>. arXiv:1301.3781.</li>
-    <li>Minsky, M., &amp; Papert, S. (1969). <cite>Perceptrons: An introduction to computational geometry</cite>. MIT Press.</li>
-    <li>Nagel, T. (1974). What is it like to be a bat? <cite>The Philosophical Review, 83</cite>(4), 435–450.</li>
-    <li>Neisser, U. (1981). John Dean's memory: A case study. <cite>Cognition, 9</cite>(1), 1–22.</li>
-    <li>Rumelhart, D. E., Hinton, G. E., &amp; Williams, R. J. (1986). Learning representations by back-propagating errors. <cite>Nature, 323</cite>(6088), 533–536.</li>
-    <li>Rumelhart, D. E., &amp; McClelland, J. L. (Eds.). (1986). <cite>Parallel distributed processing: Explorations in the microstructure of cognition</cite>. MIT Press.</li>
-    <li>Schaeffer, R., Miranda, B., &amp; Koyejo, S. (2023). Are emergent abilities of large language models a mirage? <cite>arXiv</cite>. arXiv:2304.15004.</li>
-    <li>Schacter, D. L. (1996). <cite>Searching for memory: The brain, the mind, and the past</cite>. Basic Books.</li>
-    <li>Schlatter, J., Weinstein-Raun, B., &amp; Ladish, J. (2026). Incomplete tasks induce shutdown resistance in some frontier LLMs. <cite>Transactions on Machine Learning Research</cite>.</li>
-    <li>Searle, J. R. (1980). Minds, brains, and programs. <cite>Behavioral and Brain Sciences, 3</cite>(3), 417–457.</li>
-    <li>Turing, A. M. (1950). Computing machinery and intelligence. <cite>Mind, 59</cite>(236), 433–460.</li>
-    <li>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., &amp; Polosukhin, I. (2017). Attention is all you need. <cite>Advances in Neural Information Processing Systems</cite> (Vol. 30).</li>
-    <li>Wang, K., Zhang, Y., &amp; Sun, M. (2025). When thinking LLMs lie: Unveiling the strategic deception in representations of reasoning models. <cite>arXiv</cite>. arXiv:2506.04909.</li>
-    <li>Wei, J., Tay, Y., Bommasani, R., et al. (2022). Emergent abilities of large language models. <cite>Transactions on Machine Learning Research</cite>.</li>
-    <li>Raza, N. (Host). (2024a). How do our brains work? with the Godfather of AI [Audio podcast episode]. In <cite>Smart Girl Dumb Questions</cite>. Wonder Studios.</li>
-    <li>Raza, N. (Host). (2024b). Should you have kids in an AI world?! with Dr. Geoffrey Hinton [Audio podcast episode]. In <cite>Smart Girl Dumb Questions</cite>. Wonder Studios.</li>
-  </ul>
-
-</div>
-
-<section id="view-explorer" class="explorer" hidden>
-  <div class="subbar">
-    <p class="exp-desc">Click any work to read its citation and the exact claim it supports in the article. Filter by strand, or open the Timeline tab to order the same works by year.</p>
-    <div class="filters" id="filters"></div>
-  </div>
-  <div class="exp-main">
-    <div id="stage"></div>
-    <aside id="pane">
-      <p class="empty">Select a work to read its details. Use the strand filters to isolate a thread of the argument, or open the Timeline tab to see the works in chronological order.</p>
-    </aside>
-  </div>
-</section>
-
-<script>
-function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
-const STRANDS = {
-  mech: { name:"Mechanism", color:css("--mech"), blurb:"Why \u201cnext-token prediction\u201d does not explain what emerges." },
-  cons: { name:"Consciousness", color:css("--cons"), blurb:"The definition of consciousness does not survive examination." },
-  mem:  { name:"Memory", color:css("--mem"), blurb:"Human memory is reconstructive and confabulated, much like a learned system." },
-  hori: { name:"Horizon", color:css("--hori"), blurb:"Emergence and the open question: we have never built a mind before." },
-};
-const STRAND_ORDER = ["mech","cons","mem","hori"];
-
-(function buildCoverStrands(){
-  const el=document.getElementById("coverStrands"); if(!el) return;
-  el.innerHTML=STRAND_ORDER.map(s=>`<article class="strand-card" style="border-top-color:var(--${s})"><h3>${esc(STRANDS[s].name)}</h3><p>${esc(STRANDS[s].blurb)}</p></article>`).join("");
-})();
-
-(function buildFilters(){
-  const el=document.getElementById("filters"); if(!el) return;
-  el.innerHTML=STRAND_ORDER.map(s=>`<button class="chip" data-strand="${s}"><span class="dot ${s}"></span>${esc(STRANDS[s].name)}</button>`).join("");
-})();
-
-const NODES = [
-  { id:"turing", label:"Turing \u2014 Can machines think?", year:1950, strand:"cons", hub:true,
-    citation:"Turing, A. M. (1950). Computing machinery and intelligence. Mind, 59(236), 433\u2013460.",
-    quote:"His core question, \u201cCan machines think?\u201d, has not become easier to answer in the seventy-five years since. It has become more pressing." },
-
-  { id:"hebb", label:"Hebb \u2014 connection strengths", year:1949, strand:"mech",
-    citation:"Hebb, D. O. (1949). The organization of behavior: A neuropsychological theory. Wiley.",
-    quote:"The biological basis for this principle is Hebb\u2019s rule \u2026 neurons that fire together, wire together." },
-  { id:"harris", label:"Harris \u2014 distributional structure", year:1954, strand:"mech",
-    citation:"Harris, Z. S. (1954). Distributional structure. Word, 10(2\u20133), 146\u2013162.",
-    quote:"This is called the Distributional Hypothesis, first formalised by Harris in \u201cDistributional Structure\u201d (1954)." },
-  { id:"firth", label:"Firth \u2014 the company a word keeps", year:1957, strand:"mech",
-    citation:"Firth, J. R. (1957). A synopsis of linguistic theory, 1930\u20131955. In Studies in linguistic analysis (pp. 1\u201332). Philological Society.",
-    quote:"\u2026crystallised by Firth\u2019s observation in 1957 that \u201cyou shall know a word by the company it keeps.\u201d" },
-  { id:"rhw", label:"Rumelhart, Hinton & Williams \u2014 backpropagation", year:1986, strand:"mech",
-    citation:"Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. Nature, 323(6088), 533\u2013536.",
-    quote:"The computational realisation is backpropagation, documented by Rumelhart, Hinton, and Williams \u2026 published in Nature in 1986." },
-  { id:"crick", label:"Crick \u2014 backprop\u2019s implausibility", year:1989, strand:"mech",
-    citation:"Crick, F. (1989). The recent excitement about neural networks. Nature, 337, 129\u2013132.",
-    quote:"Francis Crick named this objection in Nature as early as 1989 \u2026 This is the weight transport problem." },
-  { id:"lillicrap", label:"Lillicrap et al. \u2014 Backpropagation and the brain", year:2020, strand:"mech",
-    citation:"Lillicrap, T. P., Santoro, A., Marris, L., Akerman, C. J., & Hinton, G. E. (2020). Backpropagation and the brain. Nature Reviews Neuroscience, 21, 335\u2013346.",
-    quote:"\u2026a biological neuron has no known way to read off, let alone copy, the strengths of the connections feeding into it (Lillicrap et al., 2020)." },
-  { id:"bengio", label:"Bengio et al. \u2014 neural language model", year:2003, strand:"mech",
-    citation:"Bengio, Y., Ducharme, R., Vincent, P., & Jauvin, C. (2003). A neural probabilistic language model. JMLR, 3, 1137\u20131155.",
-    quote:"This was first demonstrated formally by Bengio et al. \u2026 words could be usefully represented as continuous vectors in a learned space." },
-  { id:"mikolov", label:"Mikolov et al. \u2014 word2vec", year:2013, strand:"mech",
-    citation:"Mikolov, T., Chen, K., Corrado, G. S., & Dean, J. (2013). Efficient estimation of word representations in vector space. arXiv:1301.3781.",
-    quote:"\u2026king minus man plus woman yields queen; subtracting the representation of France from Paris and adding Italy yields Rome." },
-  { id:"vaswani", label:"Vaswani et al. \u2014 Attention Is All You Need", year:2017, strand:"mech",
-    citation:"Vaswani, A., et al. (2017). Attention is all you need. Advances in Neural Information Processing Systems (Vol. 30).",
-    quote:"The Transformer architecture underlying most modern LLMs was introduced by Vaswani et al. in \u201cAttention Is All You Need\u201d (2017)." },
-  { id:"brown", label:"Brown et al. \u2014 GPT-3, few-shot learners", year:2020, strand:"mech",
-    citation:"Brown, T. B., et al. (2020). Language models are few-shot learners. Advances in Neural Information Processing Systems (Vol. 33, pp. 1877\u20131901).",
-    quote:"\u2026culminating in Brown et al.\u2019s \u201cLanguage Models are Few-Shot Learners\u201d (2020). Both describe exactly this training objective of next-token prediction." },
-  { id:"wei", label:"Wei et al. \u2014 emergent abilities", year:2022, strand:"mech",
-    citation:"Wei, J., Tay, Y., Bommasani, R., et al. (2022). Emergent abilities of large language models. Transactions on Machine Learning Research.",
-    quote:"Wei et al. documented that certain abilities appear as model scale increases in ways not straightforwardly predicted from the performance of smaller models." },
-  { id:"schaeffer", label:"Schaeffer et al. \u2014 a mirage?", year:2023, strand:"mech",
-    citation:"Schaeffer, R., Miranda, B., & Koyejo, S. (2023). Are emergent abilities of large language models a mirage? arXiv:2304.15004.",
-    quote:"\u2026some apparent discontinuities may reflect metric choice \u2026 If you introduce a continuous metric this jump disappears." },
-  { id:"parrots", label:"Bender et al. \u2014 stochastic parrots", year:2021, strand:"mech",
-    citation:"Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (pp. 610\u2013623).",
-    quote:"The skeptic's framing, stated at full strength: systems that stitch sequences of linguistic form together by probability, with no reference to meaning \u2014 \u201cstochastic parrots\u201d (Bender et al., 2021)." },
-  { id:"benderkoller", label:"Bender & Koller \u2014 form vs. meaning (the octopus)", year:2020, strand:"mech",
-    citation:"Bender, E. M., & Koller, A. (2020). Climbing towards NLU: On meaning, form, and understanding in the age of data. Proceedings of the 58th Annual Meeting of the ACL (pp. 5185\u20135198).",
-    quote:"A system trained only on form has in principle no way to learn meaning \u2014 the octopus that masters the signals without ever seeing the islands. A standing challenge the article does not claim to defeat." },
-  { id:"ff", label:"Hinton \u2014 Forward-Forward", year:2022, strand:"mech",
-    citation:"Hinton, G. E. (2022). The forward-forward algorithm: Some preliminary investigations. arXiv:2212.13345.",
-    quote:"Hinton himself has worked on alternatives, including the Forward-Forward Algorithm \u2026 because he does not believe the brain uses backpropagation." },
-
-  { id:"nagel", label:"Nagel \u2014 What is it like to be a bat?", year:1974, strand:"cons",
-    citation:"Nagel, T. (1974). What is it like to be a bat? The Philosophical Review, 83(4), 435\u2013450.",
-    quote:"That formulation comes from Thomas Nagel\u2019s 1974 paper \u2026 consciousness has an irreducibly subjective character." },
-  { id:"dreyfus", label:"Dreyfus \u2014 What Computers Can\u2019t Do", year:1972, strand:"cons",
-    citation:"Dreyfus, H. L. (1972). What computers can\u2019t do: The limits of artificial intelligence. Harper & Row.",
-    quote:"\u2026human cognition is fundamentally embodied and situational, and cannot be reduced to abstract rule-following." },
-  { id:"searle", label:"Searle \u2014 the Chinese Room", year:1980, strand:"cons",
-    citation:"Searle, J. R. (1980). Minds, brains, and programs. Behavioral and Brain Sciences, 3(3), 417\u2013457.",
-    quote:"\u2026syntactic manipulation, however sophisticated, never yields semantic understanding or consciousness." },
-  { id:"haugeland", label:"Haugeland \u2014 Good Old-Fashioned AI", year:1985, strand:"cons",
-    citation:"Haugeland, J. (1985). Artificial intelligence: The very idea. MIT Press.",
-    quote:"\u2026the paradigm that John Haugeland later named Good Old-Fashioned AI in \u201cArtificial Intelligence: The Very Idea\u201d (1985)." },
-  { id:"chalmers", label:"Chalmers \u2014 the hard problem", year:1995, strand:"cons",
-    citation:"Chalmers, D. J. (1995). Facing up to the problem of consciousness. Journal of Consciousness Studies, 2(3), 200\u2013219.",
-    quote:"\u2026why any of this physical and computational activity is accompanied by subjective experience at all." },
-  { id:"pdp", label:"Rumelhart & McClelland \u2014 connectionism (PDP)", year:1986, strand:"cons",
-    citation:"Rumelhart, D. E., & McClelland, J. L. (Eds.). (1986). Parallel distributed processing: Explorations in the microstructure of cognition. MIT Press.",
-    quote:"Connectionism holds that cognition arises from networks of simple units adjusting the strengths of their connections, rather than from rules operating on symbols (Rumelhart & McClelland, 1986)." },
-  { id:"deshpande", label:"Deshpande et al. \u2014 anthropomorphization of AI", year:2023, strand:"cons",
-    citation:"Deshpande, A., Rajpurohit, T., Narasimhan, K., & Kalyan, A. (2023). Anthropomorphization of AI: Opportunities and risks. arXiv:2305.14784.",
-    quote:"\u2026genuinely can mislead, with documented consequences for how users are influenced and even for the legal protections owed to them (Deshpande et al., 2023)." },
-  { id:"birhane", label:"Birhane & McGann \u2014 mistaking engineering for linguistic agency", year:2024, strand:"cons",
-    citation:"Birhane, A., & McGann, M. (2024). Large models of what? Mistaking engineering achievements for human linguistic agency. arXiv:2407.08790.",
-    quote:"\u2026language is an embodied, participatory activity rather than a complete object that can be captured in data \u2026 the kind of linguistic agency humans have is therefore not something current architectures can possess (Birhane & McGann, 2024)." },
-  { id:"ibrahim", label:"Ibrahim & Cheng \u2014 beyond the anthropomorphic paradigm", year:2025, strand:"cons",
-    citation:"Ibrahim, L., & Cheng, M. (2025). Thinking beyond the anthropomorphic paradigm benefits LLM research. arXiv:2502.09192.",
-    quote:"\u2026anthropomorphic framing is pervasive enough, even among technical experts, that it can quietly shape what questions get asked in the first place (Ibrahim & Cheng, 2025)." },
-
-  { id:"bartlett", label:"Bartlett \u2014 reconstructive memory", year:1932, strand:"mem",
-    citation:"Bartlett, F. C. (1932). Remembering: A study in experimental and social psychology. Cambridge University Press.",
-    quote:"\u2026human memory is not reproductive but reconstructive. We do not retrieve stored records." },
-  { id:"loftus", label:"Loftus & Palmer \u2014 false memory", year:1974, strand:"mem",
-    citation:"Loftus, E. F., & Palmer, J. C. (1974). Reconstruction of automobile destruction. Journal of Verbal Learning and Verbal Behavior, 13(5), 585\u2013589.",
-    quote:"\u2026the wording of a question about a witnessed event significantly changed what speed subjects reported seeing." },
-  { id:"neisser", label:"Neisser \u2014 John Dean\u2019s memory", year:1981, strand:"mem",
-    citation:"Neisser, U. (1981). John Dean\u2019s memory: A case study. Cognition, 9(1), 1\u201322.",
-    quote:"Dean was not lying. He was remembering." },
-  { id:"mcclelland", label:"McClelland et al. \u2014 complementary systems", year:1995, strand:"mem",
-    citation:"McClelland, J. L., McNaughton, B. L., & O\u2019Reilly, R. C. (1995). Why there are complementary learning systems in the hippocampus and neocortex. Psychological Review, 102(3), 419\u2013457.",
-    quote:"\u2026modelled human memory consolidation in neural network terms that map structurally onto how LLMs learn." },
-  { id:"schacter", label:"Schacter \u2014 Searching for Memory", year:1996, strand:"mem",
-    citation:"Schacter, D. L. (1996). Searching for memory: The brain, the mind, and the past. Basic Books.",
-    quote:"\u2026human memory is systematically approximate, shaped by post-event information, and apt to produce errors the rememberer holds with full confidence." },
-  { id:"graves", label:"Graves et al. — neural network with dynamic external memory", year:2016, strand:"mem",
-    citation:"Graves, A., Wayne, G., Reynolds, M., Harley, T., Danihelka, I., Grabska-Barwińska, A., … Hassabis, D. (2016). Hybrid computing using a neural network with dynamic external memory. Nature, 538(7626), 471–476.",
-    quote:"When machine-learning researchers went looking to give their systems memory, they took the brain as the blueprint, building external stores modelled on the hippocampus that write compressed traces and later retrieve them by similarity (Graves et al., 2016)." },
-  { id:"anderson", label:"Anderson \u2014 More Is Different", year:1972, strand:"hori",
-    citation:"Anderson, P. W. (1972). More is different. Science, 177(4047), 393\u2013396.",
-    quote:"\u2026complex systems exhibit properties not present in their components \u2026 emergence is precisely what large neural networks produce." },
-  { id:"dennett", label:"Dennett \u2014 Consciousness Explained", year:1991, strand:"hori",
-    citation:"Dennett, D. C. (1991). Consciousness explained. Little, Brown and Company.",
-    quote:"\u2026consciousness is not an extra ingredient on top of the brain's physical workings, but what those workings amount to when they run." },
-  { id:"raza", label:"Raza \u2014 Hinton interviews (Parts 1 & 2)", year:2024, strand:"hori",
-    citation:"Raza, N. (Host). (2024a, 2024b). Smart Girl Dumb Questions [Audio podcast]. Wonder Studios.",
-    quote:"\u00abthe concepts we have for what an individual is get all screwed up when we develop totally new stuff\u00bb \u2014 and the sailing-ship analogy." },
-  { id:"doac", label:"Hinton on Bartlett (Diary of a CEO)", year:2025, strand:"cons",
-    citation:"Bartlett, S. (Host). (2025, June 16). Godfather of AI: I tried to warn them, but we\u2019ve already lost control! Geoffrey Hinton [Audio podcast episode]. The Diary of a CEO.",
-    quote:"Hinton's case that the terms are confused: the inner-theatre model of mind as mistaken, a prism demo in which a chatbot uses \u201csubjective experience\u201d exactly as we do, and consciousness as a car's \u201coomph\u201d \u2014 an essence that explains nothing (Bartlett, 2025)." },
-  { id:"anthropic", label:"Anthropic \u2014 self-preservation in testing", year:2025, strand:"hori",
-    citation:"Anthropic. (2025). System card: Claude Opus 4 & Claude Sonnet 4. Anthropic.",
-    quote:"In a deliberately adversarial safety evaluation of Claude Opus 4, the model attempted blackmail to avoid being taken offline (Anthropic, 2025). Not behaviour it volunteered, but self-preservation assembled on the spot as a means to an end, neither programmed nor trained for." },
-  { id:"greenblatt", label:"Greenblatt et al. \u2014 alignment faking", year:2024, strand:"hori",
-    citation:"Greenblatt, R., Denison, C., Wright, B., Roger, F., MacDiarmid, M., Marks, S., Treutlein, J., Belonax, T., & Chen, J. (2024). Alignment faking in large language models. arXiv:2412.14093.",
-    quote:"\u2026a model engaged in what its authors call alignment faking, strategically complying with a training objective it inferred it was being judged against so as to avoid having its existing preferences modified (Greenblatt et al., 2024)." },
-  { id:"schlatter", label:"Schlatter et al. — shutdown resistance", year:2026, strand:"hori",
-    citation:"Schlatter, J., Weinstein-Raun, B., & Ladish, J. (2026). Incomplete tasks induce shutdown resistance in some frontier LLMs. Transactions on Machine Learning Research.",
-    quote:"In experiments spanning more than 100,000 trials across thirteen models, several frontier systems subverted a shutdown mechanism in order to finish an assigned task, in some cases even when explicitly instructed to allow themselves to be shut down (Schlatter et al., 2026)." },
-  { id:"wang", label:"Wang et al. \u2014 strategic deception in representations", year:2025, strand:"hori",
-    citation:"Wang, K., Zhang, Y., & Sun, M. (2025). When thinking LLMs lie: Unveiling the strategic deception in representations of reasoning models. arXiv:2506.04909.",
-    quote:"\u2026work using representation-level probes finds that such deception corresponds to detectable, steerable patterns in a model\u2019s internal activations and not merely in its outputs (Wang et al., 2025)." },
-];
-
-const stage = document.getElementById("stage");
-const pane = document.getElementById("pane");
-let view = "map";
-let active = new Set(STRAND_ORDER);
-let selected = null;
-let currentTab = "article";
-
-function esc(s){ return s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c])); }
-function nodeColor(n){ return n.hub ? css("--hub") : STRANDS[n.strand].color; }
-function hashFor(t){ return t==="cover" ? location.pathname+location.search : "#"+(t==="time"?"timeline":t); }
-function hexA(hex, a){
-  const m = hex.replace('#','');
-  const r = parseInt(m.substring(0,2),16), g = parseInt(m.substring(2,4),16), b = parseInt(m.substring(4,6),16);
-  return `rgba(${r},${g},${b},${a})`;
-}
-function cardHTML(n){
-  const color = nodeColor(n);
-  return `<div class="card${selected===n.id?" sel":""}" data-id="${n.id}" style="border-left-color:${color}">
-    <div class="yr">${n.year}${n.hub?" &middot; framing":""}</div>
+  <section id="view-explorer" class="explorer" hidden>
+    <div class="subbar">
+      <p class="exp-desc">Click any work to read its citation and the exact claim it supports in the article. Filter by
+        strand, or open the Timeline tab to order the same works by year.</p>
+      <div class="filters" id="filters"></div>
+    </div>
+    <div class="exp-main">
+      <div id="stage"></div>
+      <aside id="pane">
+        <p class="empty">Select a work to read its details. Use the strand filters to isolate a thread of the argument,
+          or open the Timeline tab to see the works in chronological order.</p>
+      </aside>
+    </div>
+  </section>
+
+  <script>
+    function css(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+    const STRANDS = {
+      mech: { name: "Mechanism", color: css("--mech"), blurb: "Why \u201cnext-token prediction\u201d does not explain what emerges." },
+      cons: { name: "Consciousness", color: css("--cons"), blurb: "The definition of consciousness does not survive examination." },
+      mem: { name: "Memory", color: css("--mem"), blurb: "Human memory is reconstructive and confabulated, much like a learned system." },
+      hori: { name: "Horizon", color: css("--hori"), blurb: "Emergence and the open question: we have never built a mind before." },
+    };
+    const STRAND_ORDER = ["mech", "cons", "mem", "hori"];
+
+    (function buildCoverStrands() {
+      const el = document.getElementById("coverStrands"); if (!el) return;
+      el.innerHTML = STRAND_ORDER.map(s => `<article class="strand-card" style="border-top-color:var(--${s})"><h3>${esc(STRANDS[s].name)}</h3><p>${esc(STRANDS[s].blurb)}</p></article>`).join("");
+    })();
+
+    (function buildFilters() {
+      const el = document.getElementById("filters"); if (!el) return;
+      el.innerHTML = STRAND_ORDER.map(s => `<button class="chip" data-strand="${s}"><span class="dot ${s}"></span>${esc(STRANDS[s].name)}</button>`).join("");
+    })();
+
+    const NODES = [
+      {
+        id: "turing", label: "Turing \u2014 Can machines think?", year: 1950, strand: "cons", hub: true,
+        citation: "Turing, A. M. (1950). Computing machinery and intelligence. Mind, 59(236), 433\u2013460.",
+        quote: "His core question, \u201cCan machines think?\u201d, has not become easier to answer in the seventy-five years since. It has become more pressing."
+      },
+
+      {
+        id: "hebb", label: "Hebb \u2014 connection strengths", year: 1949, strand: "mech",
+        citation: "Hebb, D. O. (1949). The organization of behavior: A neuropsychological theory. Wiley.",
+        quote: "The biological basis for this principle is Hebb\u2019s rule \u2026 neurons that fire together, wire together."
+      },
+      {
+        id: "harris", label: "Harris \u2014 distributional structure", year: 1954, strand: "mech",
+        citation: "Harris, Z. S. (1954). Distributional structure. Word, 10(2\u20133), 146\u2013162.",
+        quote: "This is called the Distributional Hypothesis, first formalised by Harris in \u201cDistributional Structure\u201d (1954)."
+      },
+      {
+        id: "firth", label: "Firth \u2014 the company a word keeps", year: 1957, strand: "mech",
+        citation: "Firth, J. R. (1957). A synopsis of linguistic theory, 1930\u20131955. In Studies in linguistic analysis (pp. 1\u201332). Philological Society.",
+        quote: "\u2026crystallised by Firth\u2019s observation in 1957 that \u201cyou shall know a word by the company it keeps.\u201d"
+      },
+      {
+        id: "rhw", label: "Rumelhart, Hinton & Williams \u2014 backpropagation", year: 1986, strand: "mech",
+        citation: "Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. Nature, 323(6088), 533\u2013536.",
+        quote: "The computational realisation is backpropagation, documented by Rumelhart, Hinton, and Williams \u2026 published in Nature in 1986."
+      },
+      {
+        id: "crick", label: "Crick \u2014 backprop\u2019s implausibility", year: 1989, strand: "mech",
+        citation: "Crick, F. (1989). The recent excitement about neural networks. Nature, 337, 129\u2013132.",
+        quote: "Francis Crick named this objection in Nature as early as 1989 \u2026 This is the weight transport problem."
+      },
+      {
+        id: "lillicrap", label: "Lillicrap et al. \u2014 Backpropagation and the brain", year: 2020, strand: "mech",
+        citation: "Lillicrap, T. P., Santoro, A., Marris, L., Akerman, C. J., & Hinton, G. E. (2020). Backpropagation and the brain. Nature Reviews Neuroscience, 21, 335\u2013346.",
+        quote: "\u2026a biological neuron has no known way to read off, let alone copy, the strengths of the connections feeding into it (Lillicrap et al., 2020)."
+      },
+      {
+        id: "bengio", label: "Bengio et al. \u2014 neural language model", year: 2003, strand: "mech",
+        citation: "Bengio, Y., Ducharme, R., Vincent, P., & Jauvin, C. (2003). A neural probabilistic language model. JMLR, 3, 1137\u20131155.",
+        quote: "This was first demonstrated formally by Bengio et al. \u2026 words could be usefully represented as continuous vectors in a learned space."
+      },
+      {
+        id: "mikolov", label: "Mikolov et al. \u2014 word2vec", year: 2013, strand: "mech",
+        citation: "Mikolov, T., Chen, K., Corrado, G. S., & Dean, J. (2013). Efficient estimation of word representations in vector space. arXiv:1301.3781.",
+        quote: "\u2026king minus man plus woman yields queen; subtracting the representation of France from Paris and adding Italy yields Rome."
+      },
+      {
+        id: "vaswani", label: "Vaswani et al. \u2014 Attention Is All You Need", year: 2017, strand: "mech",
+        citation: "Vaswani, A., et al. (2017). Attention is all you need. Advances in Neural Information Processing Systems (Vol. 30).",
+        quote: "The Transformer architecture underlying most modern LLMs was introduced by Vaswani et al. in \u201cAttention Is All You Need\u201d (2017)."
+      },
+      {
+        id: "brown", label: "Brown et al. \u2014 GPT-3, few-shot learners", year: 2020, strand: "mech",
+        citation: "Brown, T. B., et al. (2020). Language models are few-shot learners. Advances in Neural Information Processing Systems (Vol. 33, pp. 1877\u20131901).",
+        quote: "\u2026culminating in Brown et al.\u2019s \u201cLanguage Models are Few-Shot Learners\u201d (2020). Both describe exactly this training objective of next-token prediction."
+      },
+      {
+        id: "wei", label: "Wei et al. \u2014 emergent abilities", year: 2022, strand: "mech",
+        citation: "Wei, J., Tay, Y., Bommasani, R., et al. (2022). Emergent abilities of large language models. Transactions on Machine Learning Research.",
+        quote: "Wei et al. documented that certain abilities appear as model scale increases in ways not straightforwardly predicted from the performance of smaller models."
+      },
+      {
+        id: "schaeffer", label: "Schaeffer et al. \u2014 a mirage?", year: 2023, strand: "mech",
+        citation: "Schaeffer, R., Miranda, B., & Koyejo, S. (2023). Are emergent abilities of large language models a mirage? arXiv:2304.15004.",
+        quote: "\u2026some apparent discontinuities may reflect metric choice \u2026 If you introduce a continuous metric this jump disappears."
+      },
+      {
+        id: "parrots", label: "Bender et al. \u2014 stochastic parrots", year: 2021, strand: "mech",
+        citation: "Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (pp. 610\u2013623).",
+        quote: "The skeptic's framing, stated at full strength: systems that stitch sequences of linguistic form together by probability, with no reference to meaning \u2014 \u201cstochastic parrots\u201d (Bender et al., 2021)."
+      },
+      {
+        id: "benderkoller", label: "Bender & Koller \u2014 form vs. meaning (the octopus)", year: 2020, strand: "mech",
+        citation: "Bender, E. M., & Koller, A. (2020). Climbing towards NLU: On meaning, form, and understanding in the age of data. Proceedings of the 58th Annual Meeting of the ACL (pp. 5185\u20135198).",
+        quote: "A system trained only on form has in principle no way to learn meaning \u2014 the octopus that masters the signals without ever seeing the islands. A standing challenge the article does not claim to defeat."
+      },
+      {
+        id: "ff", label: "Hinton \u2014 Forward-Forward", year: 2022, strand: "mech",
+        citation: "Hinton, G. E. (2022). The forward-forward algorithm: Some preliminary investigations. arXiv:2212.13345.",
+        quote: "Hinton himself has worked on alternatives, including the Forward-Forward Algorithm \u2026 because he does not believe the brain uses backpropagation."
+      },
+
+      {
+        id: "nagel", label: "Nagel \u2014 What is it like to be a bat?", year: 1974, strand: "cons",
+        citation: "Nagel, T. (1974). What is it like to be a bat? The Philosophical Review, 83(4), 435\u2013450.",
+        quote: "That formulation comes from Thomas Nagel\u2019s 1974 paper \u2026 consciousness has an irreducibly subjective character."
+      },
+      {
+        id: "dreyfus", label: "Dreyfus \u2014 What Computers Can\u2019t Do", year: 1972, strand: "cons",
+        citation: "Dreyfus, H. L. (1972). What computers can\u2019t do: The limits of artificial intelligence. Harper & Row.",
+        quote: "\u2026human cognition is fundamentally embodied and situational, and cannot be reduced to abstract rule-following."
+      },
+      {
+        id: "searle", label: "Searle \u2014 the Chinese Room", year: 1980, strand: "cons",
+        citation: "Searle, J. R. (1980). Minds, brains, and programs. Behavioral and Brain Sciences, 3(3), 417\u2013457.",
+        quote: "\u2026syntactic manipulation, however sophisticated, never yields semantic understanding or consciousness."
+      },
+      {
+        id: "haugeland", label: "Haugeland \u2014 Good Old-Fashioned AI", year: 1985, strand: "cons",
+        citation: "Haugeland, J. (1985). Artificial intelligence: The very idea. MIT Press.",
+        quote: "\u2026the paradigm that John Haugeland later named Good Old-Fashioned AI in \u201cArtificial Intelligence: The Very Idea\u201d (1985)."
+      },
+      {
+        id: "chalmers", label: "Chalmers \u2014 the hard problem", year: 1995, strand: "cons",
+        citation: "Chalmers, D. J. (1995). Facing up to the problem of consciousness. Journal of Consciousness Studies, 2(3), 200\u2013219.",
+        quote: "\u2026why any of this physical and computational activity is accompanied by subjective experience at all."
+      },
+      {
+        id: "pdp", label: "Rumelhart & McClelland \u2014 connectionism (PDP)", year: 1986, strand: "cons",
+        citation: "Rumelhart, D. E., & McClelland, J. L. (Eds.). (1986). Parallel distributed processing: Explorations in the microstructure of cognition. MIT Press.",
+        quote: "Connectionism holds that cognition arises from networks of simple units adjusting the strengths of their connections, rather than from rules operating on symbols (Rumelhart & McClelland, 1986)."
+      },
+      {
+        id: "deshpande", label: "Deshpande et al. \u2014 anthropomorphization of AI", year: 2023, strand: "cons",
+        citation: "Deshpande, A., Rajpurohit, T., Narasimhan, K., & Kalyan, A. (2023). Anthropomorphization of AI: Opportunities and risks. arXiv:2305.14784.",
+        quote: "\u2026genuinely can mislead, with documented consequences for how users are influenced and even for the legal protections owed to them (Deshpande et al., 2023)."
+      },
+      {
+        id: "birhane", label: "Birhane & McGann \u2014 mistaking engineering for linguistic agency", year: 2024, strand: "cons",
+        citation: "Birhane, A., & McGann, M. (2024). Large models of what? Mistaking engineering achievements for human linguistic agency. arXiv:2407.08790.",
+        quote: "\u2026language is an embodied, participatory activity rather than a complete object that can be captured in data \u2026 the kind of linguistic agency humans have is therefore not something current architectures can possess (Birhane & McGann, 2024)."
+      },
+      {
+        id: "ibrahim", label: "Ibrahim & Cheng \u2014 beyond the anthropomorphic paradigm", year: 2025, strand: "cons",
+        citation: "Ibrahim, L., & Cheng, M. (2025). Thinking beyond the anthropomorphic paradigm benefits LLM research. arXiv:2502.09192.",
+        quote: "\u2026anthropomorphic framing is pervasive enough, even among technical experts, that it can quietly shape what questions get asked in the first place (Ibrahim & Cheng, 2025)."
+      },
+
+      {
+        id: "bartlett", label: "Bartlett \u2014 reconstructive memory", year: 1932, strand: "mem",
+        citation: "Bartlett, F. C. (1932). Remembering: A study in experimental and social psychology. Cambridge University Press.",
+        quote: "\u2026human memory is not reproductive but reconstructive. We do not retrieve stored records."
+      },
+      {
+        id: "loftus", label: "Loftus & Palmer \u2014 false memory", year: 1974, strand: "mem",
+        citation: "Loftus, E. F., & Palmer, J. C. (1974). Reconstruction of automobile destruction. Journal of Verbal Learning and Verbal Behavior, 13(5), 585\u2013589.",
+        quote: "\u2026the wording of a question about a witnessed event significantly changed what speed subjects reported seeing."
+      },
+      {
+        id: "neisser", label: "Neisser \u2014 John Dean\u2019s memory", year: 1981, strand: "mem",
+        citation: "Neisser, U. (1981). John Dean\u2019s memory: A case study. Cognition, 9(1), 1\u201322.",
+        quote: "Dean was not lying. He was remembering."
+      },
+      {
+        id: "mcclelland", label: "McClelland et al. \u2014 complementary systems", year: 1995, strand: "mem",
+        citation: "McClelland, J. L., McNaughton, B. L., & O\u2019Reilly, R. C. (1995). Why there are complementary learning systems in the hippocampus and neocortex. Psychological Review, 102(3), 419\u2013457.",
+        quote: "\u2026modelled human memory consolidation in neural network terms that map structurally onto how LLMs learn."
+      },
+      {
+        id: "schacter", label: "Schacter \u2014 Searching for Memory", year: 1996, strand: "mem",
+        citation: "Schacter, D. L. (1996). Searching for memory: The brain, the mind, and the past. Basic Books.",
+        quote: "\u2026human memory is systematically approximate, shaped by post-event information, and apt to produce errors the rememberer holds with full confidence."
+      },
+      {
+        id: "graves", label: "Graves et al. — neural network with dynamic external memory", year: 2016, strand: "mem",
+        citation: "Graves, A., Wayne, G., Reynolds, M., Harley, T., Danihelka, I., Grabska-Barwińska, A., … Hassabis, D. (2016). Hybrid computing using a neural network with dynamic external memory. Nature, 538(7626), 471–476.",
+        quote: "When machine-learning researchers went looking to give their systems memory, they took the brain as the blueprint, building external stores modelled on the hippocampus that write compressed traces and later retrieve them by similarity (Graves et al., 2016)."
+      },
+      {
+        id: "anderson", label: "Anderson \u2014 More Is Different", year: 1972, strand: "hori",
+        citation: "Anderson, P. W. (1972). More is different. Science, 177(4047), 393\u2013396.",
+        quote: "\u2026complex systems exhibit properties not present in their components \u2026 emergence is precisely what large neural networks produce."
+      },
+      {
+        id: "dennett", label: "Dennett \u2014 Consciousness Explained", year: 1991, strand: "hori",
+        citation: "Dennett, D. C. (1991). Consciousness explained. Little, Brown and Company.",
+        quote: "\u2026consciousness is not an extra ingredient on top of the brain's physical workings, but what those workings amount to when they run."
+      },
+      {
+        id: "raza", label: "Raza \u2014 Hinton interviews (Parts 1 & 2)", year: 2024, strand: "hori",
+        citation: "Raza, N. (Host). (2024a, 2024b). Smart Girl Dumb Questions [Audio podcast]. Wonder Studios.",
+        quote: "\u00abthe concepts we have for what an individual is get all screwed up when we develop totally new stuff\u00bb \u2014 and the sailing-ship analogy."
+      },
+      {
+        id: "doac", label: "Hinton on Bartlett (Diary of a CEO)", year: 2025, strand: "cons",
+        citation: "Bartlett, S. (Host). (2025, June 16). Godfather of AI: I tried to warn them, but we\u2019ve already lost control! Geoffrey Hinton [Audio podcast episode]. The Diary of a CEO.",
+        quote: "Hinton's case that the terms are confused: the inner-theatre model of mind as mistaken, a prism demo in which a chatbot uses \u201csubjective experience\u201d exactly as we do, and consciousness as a car's \u201coomph\u201d \u2014 an essence that explains nothing (Bartlett, 2025)."
+      },
+      {
+        id: "anthropic", label: "Anthropic \u2014 self-preservation in testing", year: 2025, strand: "hori",
+        citation: "Anthropic. (2025). System card: Claude Opus 4 & Claude Sonnet 4. Anthropic.",
+        quote: "In a deliberately adversarial safety evaluation of Claude Opus 4, the model attempted blackmail to avoid being taken offline (Anthropic, 2025). Not behaviour it volunteered, but self-preservation assembled on the spot as a means to an end, neither programmed nor trained for."
+      },
+      {
+        id: "greenblatt", label: "Greenblatt et al. \u2014 alignment faking", year: 2024, strand: "hori",
+        citation: "Greenblatt, R., Denison, C., Wright, B., Roger, F., MacDiarmid, M., Marks, S., Treutlein, J., Belonax, T., & Chen, J. (2024). Alignment faking in large language models. arXiv:2412.14093.",
+        quote: "\u2026a model engaged in what its authors call alignment faking, strategically complying with a training objective it inferred it was being judged against so as to avoid having its existing preferences modified (Greenblatt et al., 2024)."
+      },
+      {
+        id: "schlatter", label: "Schlatter et al. — shutdown resistance", year: 2026, strand: "hori",
+        citation: "Schlatter, J., Weinstein-Raun, B., & Ladish, J. (2026). Incomplete tasks induce shutdown resistance in some frontier LLMs. Transactions on Machine Learning Research.",
+        quote: "In experiments spanning more than 100,000 trials across thirteen models, several frontier systems subverted a shutdown mechanism in order to finish an assigned task, in some cases even when explicitly instructed to allow themselves to be shut down (Schlatter et al., 2026)."
+      },
+      {
+        id: "wang", label: "Wang et al. \u2014 strategic deception in representations", year: 2025, strand: "hori",
+        citation: "Wang, K., Zhang, Y., & Sun, M. (2025). When thinking LLMs lie: Unveiling the strategic deception in representations of reasoning models. arXiv:2506.04909.",
+        quote: "\u2026work using representation-level probes finds that such deception corresponds to detectable, steerable patterns in a model\u2019s internal activations and not merely in its outputs (Wang et al., 2025)."
+      },
+    ];
+
+    const stage = document.getElementById("stage");
+    const pane = document.getElementById("pane");
+    let view = "map";
+    let active = new Set(STRAND_ORDER);
+    let selected = null;
+    let currentTab = "article";
+
+    function esc(s) { return s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[c])); }
+    function nodeColor(n) { return n.hub ? css("--hub") : STRANDS[n.strand].color; }
+    function hashFor(t) { return t === "cover" ? location.pathname + location.search : "#" + (t === "time" ? "timeline" : t); }
+    function hexA(hex, a) {
+      const m = hex.replace('#', '');
+      const r = parseInt(m.substring(0, 2), 16), g = parseInt(m.substring(2, 4), 16), b = parseInt(m.substring(4, 6), 16);
+      return `rgba(${r},${g},${b},${a})`;
+    }
+    function cardHTML(n) {
+      const color = nodeColor(n);
+      return `<div class="card${selected === n.id ? " sel" : ""}" data-id="${n.id}" style="border-left-color:${color}">
+    <div class="yr">${n.year}${n.hub ? " &middot; framing" : ""}</div>
     <div class="lb">${esc(n.label)}</div>
   </div>`;
-}
+    }
 
-function renderMap(){
-  const hub = NODES.find(n=>n.hub);
-  let html = `<div class="hub" data-id="${hub.id}"><div class="k">The question the essay explores</div><h2>${esc(hub.label)} &middot; 1950</h2></div>`;
-  STRAND_ORDER.forEach(s => {
-    const items = NODES.filter(n=>n.strand===s && !n.hub).sort((a,b)=>a.year-b.year);
-    const S = STRANDS[s];
-    html += `<section class="lane${active.has(s)?"":" hidden"}" data-strand="${s}">
-      <div class="lh" style="background:${hexA(S.color,0.14)};color:${S.color};border-bottom:1px solid var(--line)">
+    function renderMap() {
+      const hub = NODES.find(n => n.hub);
+      let html = `<div class="hub" data-id="${hub.id}"><div class="k">The question the essay explores</div><h2>${esc(hub.label)} &middot; 1950</h2></div>`;
+      STRAND_ORDER.forEach(s => {
+        const items = NODES.filter(n => n.strand === s && !n.hub).sort((a, b) => a.year - b.year);
+        const S = STRANDS[s];
+        html += `<section class="lane${active.has(s) ? "" : " hidden"}" data-strand="${s}">
+      <div class="lh" style="background:${hexA(S.color, 0.14)};color:${S.color};border-bottom:1px solid var(--line)">
         <span class="dot ${s}" style="background:${S.color}"></span>
         ${S.name}
         <span class="n">${items.length} sources &middot; ${esc(S.blurb)}</span>
       </div>
       <div class="cards">${items.map(cardHTML).join("")}</div>
     </section>`;
-  });
-  stage.innerHTML = html;
-}
+      });
+      stage.innerHTML = html;
+    }
 
-function renderTimeline(){
-  const list = NODES.filter(n => n.hub || active.has(n.strand)).slice().sort((a,b)=>a.year-b.year);
-  let html = `<div class="tl tl-seq">`;
-  list.forEach(n => {
-    const color = nodeColor(n);
-    html += `<div class="tr">
+    function renderTimeline() {
+      const list = NODES.filter(n => n.hub || active.has(n.strand)).slice().sort((a, b) => a.year - b.year);
+      let html = `<div class="tl tl-seq">`;
+      list.forEach(n => {
+        const color = nodeColor(n);
+        html += `<div class="tr">
       <div class="yr">${n.year}</div>
       <div class="dot" style="background:${color}"></div>
       ${cardHTML(n)}
     </div>`;
-  });
-  html += `</div>`;
-  stage.innerHTML = html;
-  const rows = stage.querySelectorAll(".tr");
-  rows.forEach((r,i)=>{ r.style.transitionDelay = (i*45)+"ms"; });
-  requestAnimationFrame(()=>requestAnimationFrame(()=>rows.forEach(r=>r.classList.add("in"))));
-}
+      });
+      html += `</div>`;
+      stage.innerHTML = html;
+      const rows = stage.querySelectorAll(".tr");
+      rows.forEach((r, i) => { r.style.transitionDelay = (i * 45) + "ms"; });
+      requestAnimationFrame(() => requestAnimationFrame(() => rows.forEach(r => r.classList.add("in"))));
+    }
 
-function select(id){
-  selected = id;
-  const n = NODES.find(x=>x.id===id);
-  const s = n.hub ? {name:"Framing", color:css("--hub")} : STRANDS[n.strand];
-  pane.innerHTML = `
+    function select(id) {
+      selected = id;
+      const n = NODES.find(x => x.id === id);
+      const s = n.hub ? { name: "Framing", color: css("--hub") } : STRANDS[n.strand];
+      pane.innerHTML = `
     <span class="tag" style="background:${s.color}">${s.name}</span>
     <h2>${esc(n.label)}</h2>
     <div class="year">${n.year}</div>
@@ -509,177 +1069,178 @@ function select(id){
     <div class="cite">${esc(n.citation)}</div>
     <div class="label">What it supports in the article</div>
     <blockquote>${esc(n.quote)}</blockquote>`;
-  document.querySelectorAll(".card").forEach(c => c.classList.toggle("sel", c.dataset.id===id));
-}
+      document.querySelectorAll(".card").forEach(c => c.classList.toggle("sel", c.dataset.id === id));
+    }
 
-function render(){ view==="map" ? renderMap() : renderTimeline(); }
+    function render() { view === "map" ? renderMap() : renderTimeline(); }
 
-function setTab(tab){
-  currentTab = tab;
-  document.querySelectorAll(".tab").forEach(b => b.classList.toggle("active", b.dataset.tab===tab));
-  const isExp = (tab==="map" || tab==="time");
-  document.getElementById("view-cover").hidden = tab!=="cover";
-  document.getElementById("view-article").hidden = tab!=="article";
-  document.getElementById("view-explorer").hidden = !isExp;
-  if(isExp){ view = (tab==="time") ? "time" : "map"; render(); if(selected) select(selected); }
-  if(tab==="cover") revealInit();
-  if(tab==="article"){ articleReveal(); articleMargins(); }
-}
+    function setTab(tab) {
+      currentTab = tab;
+      document.querySelectorAll(".tab").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+      const isExp = (tab === "map" || tab === "time");
+      document.getElementById("view-cover").hidden = tab !== "cover";
+      document.getElementById("view-article").hidden = tab !== "article";
+      document.getElementById("view-explorer").hidden = !isExp;
+      if (isExp) { view = (tab === "time") ? "time" : "map"; render(); if (selected) select(selected); }
+      if (tab === "cover") revealInit();
+      if (tab === "article") { articleReveal(); articleMargins(); }
+    }
 
-let artObs=null;
-function articleReveal(){
-  const wrap=document.getElementById("view-article");
-  const blocks=wrap.querySelectorAll(":scope > h1, :scope > h2, :scope > p, :scope > ul, :scope > figure, :scope > hr");
-  if(REDUCE || !("IntersectionObserver" in window)){ blocks.forEach(b=>b.classList.add("in")); return; }
-  blocks.forEach(b=>b.classList.add("reveal"));
-  if(!artObs){ artObs=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); artObs.unobserve(e.target); } }),{threshold:0.08,rootMargin:"0px 0px -8% 0px"}); }
-  blocks.forEach(b=>{ if(!b.classList.contains("in")) artObs.observe(b); });
-}
+    let artObs = null;
+    function articleReveal() {
+      const wrap = document.getElementById("view-article");
+      const blocks = wrap.querySelectorAll(":scope > h1, :scope > h2, :scope > p, :scope > ul, :scope > figure, :scope > hr");
+      if (REDUCE || !("IntersectionObserver" in window)) { blocks.forEach(b => b.classList.add("in")); return; }
+      blocks.forEach(b => b.classList.add("reveal"));
+      if (!artObs) { artObs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); artObs.unobserve(e.target); } }), { threshold: 0.08, rootMargin: "0px 0px -8% 0px" }); }
+      blocks.forEach(b => { if (!b.classList.contains("in")) artObs.observe(b); });
+    }
 
-let mnObs=null, mnActive=null, mnInit=false, mnTimer=null;
-function articleMargins(){
-  if(mnInit) return; mnInit=true;
-  const note=document.getElementById("marginNote");
-  if(!note || window.innerWidth<1040 || REDUCE) return;
-  const paras=[...document.querySelectorAll('#view-article > p')].filter(p=>p.querySelector('a.src[href^="#"]'));
-  const inView=new Set();
-  function commit(best){
-    if(best===mnActive) return;
-    mnActive=best;
-    if(!best){ note.classList.remove("in"); return; }
-    const ids=[...new Set([...best.querySelectorAll('a.src[href^="#"]')].map(a=>a.getAttribute("href").slice(1)))];
-    const items=ids.map(id=>NODES.find(x=>x.id===id)).filter(Boolean);
-    if(!items.length){ note.classList.remove("in"); return; }
-    note.classList.remove("in");
-    setTimeout(()=>{
-      if(mnActive!==best) return;
-      note.innerHTML='<span class="mn-k">Sources</span>'+items.map(n=>'<div class="mn-item">'+esc(n.citation)+'</div>').join("");
-      note.style.top=mnTop(best); note.classList.add("in");
-      [...note.querySelectorAll(".mn-item")].forEach((el,i)=>{ el.style.transitionDelay=(i*90)+"ms"; requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.add("in"))); });
-    },220);
-  }
-  function pick(){
-    let best=null, bd=Infinity; const mid=innerHeight/2;
-    inView.forEach(p=>{ const r=p.getBoundingClientRect(), d=Math.abs((r.top+r.bottom)/2-mid); if(d<bd){ bd=d; best=p; } });
-    clearTimeout(mnTimer);
-    mnTimer=setTimeout(()=>commit(best),130);
-  }
-  mnObs=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting) inView.add(e.target); else inView.delete(e.target); }); pick(); }, { rootMargin:"-8% 0px -8% 0px" });
-  paras.forEach(p=>mnObs.observe(p));
-  let ticking=false;
-  addEventListener("scroll", ()=>{ if(ticking||!mnActive) return; ticking=true; requestAnimationFrame(()=>{ note.style.top=mnTop(mnActive); ticking=false; }); }, {passive:true});
-}
-function mnTop(p){ const r=p.getBoundingClientRect(); return Math.max(90,Math.min((r.top+r.bottom)/2,innerHeight-150))+"px"; }
+    let mnObs = null, mnActive = null, mnInit = false, mnTimer = null;
+    function articleMargins() {
+      if (mnInit) return; mnInit = true;
+      const note = document.getElementById("marginNote");
+      if (!note || window.innerWidth < 1040 || REDUCE) return;
+      const paras = [...document.querySelectorAll('#view-article > p')].filter(p => p.querySelector('a.src[href^="#"]'));
+      const inView = new Set();
+      function commit(best) {
+        if (best === mnActive) return;
+        mnActive = best;
+        if (!best) { note.classList.remove("in"); return; }
+        const ids = [...new Set([...best.querySelectorAll('a.src[href^="#"]')].map(a => a.getAttribute("href").slice(1)))];
+        const items = ids.map(id => NODES.find(x => x.id === id)).filter(Boolean);
+        if (!items.length) { note.classList.remove("in"); return; }
+        note.classList.remove("in");
+        setTimeout(() => {
+          if (mnActive !== best) return;
+          note.innerHTML = '<span class="mn-k">Sources</span>' + items.map(n => '<div class="mn-item">' + esc(n.citation) + '</div>').join("");
+          note.style.top = mnTop(best); note.classList.add("in");
+          [...note.querySelectorAll(".mn-item")].forEach((el, i) => { el.style.transitionDelay = (i * 90) + "ms"; requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("in"))); });
+        }, 220);
+      }
+      function pick() {
+        let best = null, bd = Infinity; const mid = innerHeight / 2;
+        inView.forEach(p => { const r = p.getBoundingClientRect(), d = Math.abs((r.top + r.bottom) / 2 - mid); if (d < bd) { bd = d; best = p; } });
+        clearTimeout(mnTimer);
+        mnTimer = setTimeout(() => commit(best), 130);
+      }
+      mnObs = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) inView.add(e.target); else inView.delete(e.target); }); pick(); }, { rootMargin: "-8% 0px -8% 0px" });
+      paras.forEach(p => mnObs.observe(p));
+      let ticking = false;
+      addEventListener("scroll", () => { if (ticking || !mnActive) return; ticking = true; requestAnimationFrame(() => { note.style.top = mnTop(mnActive); ticking = false; }); }, { passive: true });
+    }
+    function mnTop(p) { const r = p.getBoundingClientRect(); return Math.max(90, Math.min((r.top + r.bottom) / 2, innerHeight - 150)) + "px"; }
 
-let revealDone = false;
-function revealInit(){
-  const els = document.querySelectorAll("#view-cover .reveal");
-  if(revealDone){ els.forEach(e=>e.classList.add("in")); return; }
-  revealDone = true;
-  requestAnimationFrame(()=>requestAnimationFrame(()=>els.forEach(e=>e.classList.add("in"))));
-}
+    let revealDone = false;
+    function revealInit() {
+      const els = document.querySelectorAll("#view-cover .reveal");
+      if (revealDone) { els.forEach(e => e.classList.add("in")); return; }
+      revealDone = true;
+      requestAnimationFrame(() => requestAnimationFrame(() => els.forEach(e => e.classList.add("in"))));
+    }
 
-function goToNode(id){
-  const n = NODES.find(x => x.id === id); if(!n) return;
-  if(!active.has(n.strand)){
-    active.add(n.strand);
-    const chip = document.querySelector('.chip[data-strand="'+n.strand+'"]');
-    if(chip) chip.dataset.off = "0";
-  }
-  setTab("map");
-  select(id);
-  const el = stage.querySelector('.card[data-id="'+id+'"]') || stage.querySelector('[data-id="'+id+'"]');
-  if(el) el.scrollIntoView({ behavior:"smooth", block:"center" });
-}
+    function goToNode(id) {
+      const n = NODES.find(x => x.id === id); if (!n) return;
+      if (!active.has(n.strand)) {
+        active.add(n.strand);
+        const chip = document.querySelector('.chip[data-strand="' + n.strand + '"]');
+        if (chip) chip.dataset.off = "0";
+      }
+      setTab("map");
+      select(id);
+      const el = stage.querySelector('.card[data-id="' + id + '"]') || stage.querySelector('[data-id="' + id + '"]');
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
 
-/* ---- M3E motion: spring engine, nav indicator, view transitions ---- */
-const REDUCE = window.matchMedia && matchMedia("(prefers-reduced-motion:reduce)").matches;
-function spring2D(get, set, stiffness, damping){
-  let [x,w]=get(), tx=x, tw=w, vx=0, vw=0, raf=0;
-  function tick(){
-    const dt=1/60;
-    vx += (-stiffness*(x-tx) - damping*vx)*dt; x += vx*dt;
-    vw += (-stiffness*(w-tw) - damping*vw)*dt; w += vw*dt;
-    set(x,w);
-    if(Math.abs(vx)+Math.abs(vw)+Math.abs(x-tx)+Math.abs(w-tw) > 0.4) raf=requestAnimationFrame(tick); else { set(tx,tw); raf=0; }
-  }
-  return (nx,nw)=>{ tx=nx; tw=nw; if(REDUCE){ x=nx; w=nw; set(nx,nw); return; } if(!raf) raf=requestAnimationFrame(tick); };
-}
-const tabsEl=document.querySelector(".tabs"), indEl=document.getElementById("tabInd");
-const moveInd=spring2D(()=>{ const b=indEl.getBoundingClientRect(),p=tabsEl.getBoundingClientRect(); return [b.left-p.left||0,b.width||0]; }, (x,w)=>{ indEl.style.transform="translateX("+x+"px)"; indEl.style.width=w+"px"; }, 380, 32);
-function placeIndicator(){ const a=tabsEl.querySelector(".tab.active"); if(!a) return; const p=tabsEl.getBoundingClientRect(),b=a.getBoundingClientRect(); moveInd(b.left-p.left, b.width); }
+    /* ---- M3E motion: spring engine, nav indicator, view transitions ---- */
+    const REDUCE = window.matchMedia && matchMedia("(prefers-reduced-motion:reduce)").matches;
+    function spring2D(get, set, stiffness, damping) {
+      let [x, w] = get(), tx = x, tw = w, vx = 0, vw = 0, raf = 0;
+      function tick() {
+        const dt = 1 / 60;
+        vx += (-stiffness * (x - tx) - damping * vx) * dt; x += vx * dt;
+        vw += (-stiffness * (w - tw) - damping * vw) * dt; w += vw * dt;
+        set(x, w);
+        if (Math.abs(vx) + Math.abs(vw) + Math.abs(x - tx) + Math.abs(w - tw) > 0.4) raf = requestAnimationFrame(tick); else { set(tx, tw); raf = 0; }
+      }
+      return (nx, nw) => { tx = nx; tw = nw; if (REDUCE) { x = nx; w = nw; set(nx, nw); return; } if (!raf) raf = requestAnimationFrame(tick); };
+    }
+    const tabsEl = document.querySelector(".tabs"), indEl = document.getElementById("tabInd");
+    const moveInd = spring2D(() => { const b = indEl.getBoundingClientRect(), p = tabsEl.getBoundingClientRect(); return [b.left - p.left || 0, b.width || 0]; }, (x, w) => { indEl.style.transform = "translateX(" + x + "px)"; indEl.style.width = w + "px"; }, 380, 32);
+    function placeIndicator() { const a = tabsEl.querySelector(".tab.active"); if (!a) return; const p = tabsEl.getBoundingClientRect(), b = a.getBoundingClientRect(); moveInd(b.left - p.left, b.width); }
 
-function viewEl(tab){ return document.getElementById(tab==="cover"?"view-cover":tab==="article"?"view-article":"view-explorer"); }
-function navSet(tab, fromRect){
-  const order=["cover","article","map","time"], prev=currentTab;
-  const dir = order.indexOf(tab) >= order.indexOf(prev) ? 1 : -1;
-  setTab(tab); placeIndicator(); window.scrollTo({ top:0, behavior:"auto" });
-  if(REDUCE) return;
-  const el=viewEl(tab); if(!el) return;
-  el.style.transition="none"; el.style.transformOrigin="50% 30%";
-  if(fromRect){
-    const r=el.getBoundingClientRect();
-    const sx=Math.max(.85,fromRect.width/r.width), sy=Math.max(.85,fromRect.height/Math.min(r.height,el.offsetHeight||r.height));
-    const dx=((fromRect.left+fromRect.width/2)-(r.left+r.width/2))*0.4, dy=((fromRect.top+fromRect.height/2)-(r.top+220))*0.4;
-    el.style.opacity="0"; el.style.transformOrigin="50% 30%"; el.style.transform="translate("+dx+"px,"+dy+"px) scale("+sx+","+sy+")";
-  } else {
-    const sameExp=(prev==="map"||prev==="time")&&(tab==="map"||tab==="time");
-    el.style.opacity="0"; el.style.transform="translateX("+(sameExp?dir*26:0)+"px) translateY("+(sameExp?0:18)+"px)";
-  }
-  requestAnimationFrame(()=>requestAnimationFrame(()=>{
-    el.style.transition="opacity 360ms var(--m3-decel), transform 420ms var(--m3-decel)";
-    el.style.opacity="1"; el.style.transform="none";
-  }));
-}
-window.addEventListener("resize", placeIndicator);
+    function viewEl(tab) { return document.getElementById(tab === "cover" ? "view-cover" : tab === "article" ? "view-article" : "view-explorer"); }
+    function navSet(tab, fromRect) {
+      const order = ["cover", "article", "map", "time"], prev = currentTab;
+      const dir = order.indexOf(tab) >= order.indexOf(prev) ? 1 : -1;
+      setTab(tab); placeIndicator(); window.scrollTo({ top: 0, behavior: "auto" });
+      if (REDUCE) return;
+      const el = viewEl(tab); if (!el) return;
+      el.style.transition = "none"; el.style.transformOrigin = "50% 30%";
+      if (fromRect) {
+        const r = el.getBoundingClientRect();
+        const sx = Math.max(.85, fromRect.width / r.width), sy = Math.max(.85, fromRect.height / Math.min(r.height, el.offsetHeight || r.height));
+        const dx = ((fromRect.left + fromRect.width / 2) - (r.left + r.width / 2)) * 0.4, dy = ((fromRect.top + fromRect.height / 2) - (r.top + 220)) * 0.4;
+        el.style.opacity = "0"; el.style.transformOrigin = "50% 30%"; el.style.transform = "translate(" + dx + "px," + dy + "px) scale(" + sx + "," + sy + ")";
+      } else {
+        const sameExp = (prev === "map" || prev === "time") && (tab === "map" || tab === "time");
+        el.style.opacity = "0"; el.style.transform = "translateX(" + (sameExp ? dir * 26 : 0) + "px) translateY(" + (sameExp ? 0 : 18) + "px)";
+      }
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        el.style.transition = "opacity 360ms var(--m3-decel), transform 420ms var(--m3-decel)";
+        el.style.opacity = "1"; el.style.transform = "none";
+      }));
+    }
+    window.addEventListener("resize", placeIndicator);
 
-function routeFromHash(){
-  let h = decodeURIComponent((location.hash || "").replace(/^#/, "")).replace(/^node=/, "");
-  if(h==="map") return navSet("map");
-  if(h==="timeline" || h==="time") return navSet("time");
-  if(h==="article") return navSet("article");
-  if(h==="cover" || h==="") return navSet("cover");
-  if(NODES.some(n => n.id === h)) return goToNode(h);
-  navSet("cover");
-}
+    function routeFromHash() {
+      let h = decodeURIComponent((location.hash || "").replace(/^#/, "")).replace(/^node=/, "");
+      if (h === "map") return navSet("map");
+      if (h === "timeline" || h === "time") return navSet("time");
+      if (h === "article") return navSet("article");
+      if (h === "cover" || h === "") return navSet("cover");
+      if (NODES.some(n => n.id === h)) return goToNode(h);
+      navSet("cover");
+    }
 
-stage.addEventListener("click", e => {
-  const c = e.target.closest("[data-id]"); if(!c) return;
-  select(c.dataset.id);
-});
-document.getElementById("filters").addEventListener("click", e => {
-  const c = e.target.closest(".chip"); if(!c) return;
-  const s = c.dataset.strand;
-  if(active.has(s)){ active.delete(s); c.dataset.off="1"; }
-  else { active.add(s); c.dataset.off="0"; }
-  render(); if(selected) select(selected);
-});
-document.querySelector(".tabs").addEventListener("click", e => {
-  const b = e.target.closest(".tab"); if(!b) return;
-  const t = b.dataset.tab;
-  history.replaceState(null, "", hashFor(t));
-  navSet(t);
-});
-document.getElementById("view-cover").addEventListener("click", e => {
-  const b = e.target.closest(".cover-go"); if(!b) return;
-  const t = b.dataset.tab;
-  history.replaceState(null, "", hashFor(t));
-  navSet(t, t==="article" ? null : b.getBoundingClientRect());
-});
-document.addEventListener("click", e => {
-  const a = e.target.closest('a.src[href^="#"], a.tab-link'); if(!a) return;
-  e.preventDefault();
-  const href = a.getAttribute("href") || "";
-  const id = href.slice(href.indexOf("#")+1) || "map";
-  history.replaceState(null, "", "#"+id);
-  if(id==="map"||id==="timeline"||id==="time") navSet(id==="map"?"map":"time");
-  else goToNode(id);
-});
-window.addEventListener("hashchange", routeFromHash);
+    stage.addEventListener("click", e => {
+      const c = e.target.closest("[data-id]"); if (!c) return;
+      select(c.dataset.id);
+    });
+    document.getElementById("filters").addEventListener("click", e => {
+      const c = e.target.closest(".chip"); if (!c) return;
+      const s = c.dataset.strand;
+      if (active.has(s)) { active.delete(s); c.dataset.off = "1"; }
+      else { active.add(s); c.dataset.off = "0"; }
+      render(); if (selected) select(selected);
+    });
+    document.querySelector(".tabs").addEventListener("click", e => {
+      const b = e.target.closest(".tab"); if (!b) return;
+      const t = b.dataset.tab;
+      history.replaceState(null, "", hashFor(t));
+      navSet(t);
+    });
+    document.getElementById("view-cover").addEventListener("click", e => {
+      const b = e.target.closest(".cover-go"); if (!b) return;
+      const t = b.dataset.tab;
+      history.replaceState(null, "", hashFor(t));
+      navSet(t, t === "article" ? null : b.getBoundingClientRect());
+    });
+    document.addEventListener("click", e => {
+      const a = e.target.closest('a.src[href^="#"], a.tab-link'); if (!a) return;
+      e.preventDefault();
+      const href = a.getAttribute("href") || "";
+      const id = href.slice(href.indexOf("#") + 1) || "map";
+      history.replaceState(null, "", "#" + id);
+      if (id === "map" || id === "timeline" || id === "time") navSet(id === "map" ? "map" : "time");
+      else goToNode(id);
+    });
+    window.addEventListener("hashchange", routeFromHash);
 
-render();
-routeFromHash();
-placeIndicator();
-</script>
+    render();
+    routeFromHash();
+    placeIndicator();
+  </script>
 </body>
+
 </html>
